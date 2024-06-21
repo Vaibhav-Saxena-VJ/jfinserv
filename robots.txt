@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /thankyou
+Disallow: /privacy-policy
+Disallow: /cookie-policy
+Disallow: /terms-condition

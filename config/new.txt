@@ -1,0 +1,8 @@
+PHP Parse error:  syntax error, unexpected '=' in /home/vebsigns/finkompas.com/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+
+composer install --no-dev --ignore-platform-reqs
+
+PHP Parse error:  syntax error, unexpected '=' in /home/vebsigns/finkompas.com/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+
+Parse error: syntax error, unexpected '=' in /home/vebsigns/finkompas.com/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+ 
