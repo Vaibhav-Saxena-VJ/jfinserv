@@ -1,7 +1,7 @@
 @extends('layouts.app')
-@section('title', "Contract Loan in Pune | Loan against property in Pune - Jfinserv")
-@section('description', "Explore competitive Contract Loan in Pune and loan against property services in Pune. Secure your dream home with our expert Contractual loan services.")
-@section('keywords', "Contract Loan in Pune, Loan against property in Pune, Contractual loan in Pune, Contractual loan services in PCMC")
+@section('title', "Loan Against Property in Pune | Loan against property in Pune - Jfinserv")
+@section('description', "Explore competitive Loan Against Property in Pune and loan against property services in Pune. Secure your dream home with our expert Contractual loan services.")
+@section('keywords', "Loan Against Property in Pune, Loan against property in Pune, Contractual loan in Pune, Contractual loan services in PCMC")
 
 @section('content')
 <style type="text/css">
@@ -526,7 +526,7 @@
                 <div class="col-lg-12 mx-auto">
                     <div class="banner-content text-center">
                         <div class="section-title">
-                            <h1 class="wow fadeInUp" style="font-size: 40px;">Contract Loan</h1>
+                            <h1 class="wow fadeInUp" style="font-size: 40px;">Loan Against Property</h1>
                             <ul class="display-8 text-top wow fadeInUp mt-3 bnr-description" style="color: #fff;">
                                 <li><i class="fa-solid fa-percent"></i> Low Interest Rate</li>
                                 <li><i class="fa-solid fa-laptop-file"></i> Online Application Process</li>
@@ -548,7 +548,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-12 box-height mb-5">
                     <p class="Block-quote"><i class="fa-solid fa-quote-left"></i></p>
-                    <p class="display-8 text-top wow fadeInUp bnr-description brdr-Block">In need of quick funds? Look no further than Contract Loans, commonly referred to simply as Contracts. They stand out as one of the most straightforward and popular financing choices on the market. Typically, Contracts boast rapid approval and favorable interest rates.<br/><br/>A Loan Against Property can essentially be labeled as a Contract Loan, as it entails mortgaging your property to mitigate the risk of non-payment or default in repaying the borrowed funds. To secure approval for such a loan, lenders typically scrutinize your personal and financial background, assessing factors such as nationality, age, occupation, income, and the market value of the collateral being offered.</p>
+                    <p class="display-8 text-top wow fadeInUp bnr-description brdr-Block">In need of quick funds? Look no further than Loan Against Propertys, commonly referred to simply as Contracts. They stand out as one of the most straightforward and popular financing choices on the market. Typically, Contracts boast rapid approval and favorable interest rates.<br/><br/>A Loan Against Property can essentially be labeled as a Loan Against Property, as it entails mortgaging your property to mitigate the risk of non-payment or default in repaying the borrowed funds. To secure approval for such a loan, lenders typically scrutinize your personal and financial background, assessing factors such as nationality, age, occupation, income, and the market value of the collateral being offered.</p>
                     <!--<span>Best Creative digital Agency</span>-->
                 </div>
                 <div class="col-md-12">
@@ -557,7 +557,7 @@
                             <div class="single-widget-one wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="w-100">
                                     <div class="faq-header" id="headingOne">
-                                        <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span style="color: #d83733;">Eligibility</span> for a Contract Loan<i class="material-icons">add</i><i class="material-icons">remove</i>
+                                        <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span style="color: #d83733;">Eligibility</span> for a Loan Against Property<i class="material-icons">add</i><i class="material-icons">remove</i>
                                         </h4>
                                     </div>
                                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -603,16 +603,16 @@
                             <div class="single-widget-one wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="w-100">
                                     <div class="faq-header" id="headingThree">
-                                        <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><span style="color: #d83733;">Benefits</span> of Contract Loan<i class="material-icons">add</i><i class="material-icons">remove</i>
+                                        <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><span style="color: #d83733;">Benefits</span> of Loan Against Property<i class="material-icons">add</i><i class="material-icons">remove</i>
                                         </h4>
                                     </div>
                                     <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="faq-body">
-                                            <p>Numerous advantages come with a Contract Loan, contributing to its popularity among borrowers. Here are some of the key benefits associated with obtaining this type of loan:</p>
+                                            <p>Numerous advantages come with a Loan Against Property, contributing to its popularity among borrowers. Here are some of the key benefits associated with obtaining this type of loan:</p>
                                             <ul>
                                                 <li>You maintain legal ownership of the property you offer as collateral.</li>
-                                                <li>Due to its secured nature, a Contract loan generally garners quicker approval.</li>
-                                                <li>Contract loan interest rates tend to be lower than those of personal loans.</li>
+                                                <li>Due to its secured nature, a Loan Against Property generally garners quicker approval.</li>
+                                                <li>Loan Against Property interest rates tend to be lower than those of personal loans.</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -694,7 +694,7 @@
                 <div class="col-lg-6 mx-auto pb-5">
                     <div class="section-title">
                         <h2 class="wow fadeInUp">Loan Calculator</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.3s">Get an approximate figure for the total monthly instalment payments along with a complete break-up of the Contract loan.</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.3s">Get an approximate figure for the total monthly instalment payments along with a complete break-up of the Loan Against Property.</p>
                     </div>
                 </div>
             </div>
@@ -804,7 +804,7 @@
                                         <select name="select_loan_type" id="select-loan-type">
                                             <option>Select your Loan</option>
                                             <option id="Home_loan" value="Home Loan">Home Loan</option>
-                                            <option id="Home_loan" value="Contract Loan" value="Contract Loan">Contract Loan</option>
+                                            <option id="Home_loan" value="Loan Against Property" value="Loan Against Property">Loan Against Property</option>
                                             <option value="Project Loan">Project Loan</option>
                                             <option value="Working Capital">Working Capital</option>
                                             <option value="Overdraft Facility">Overdraft Facility</option>
@@ -864,12 +864,12 @@
                             <div class="single-widget-one wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="w-100">
                                     <div class="faq-header" id="headingOne">
-                                        <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What is a Contract loan?<i class="material-icons">add</i><i class="material-icons">remove</i>
+                                        <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What is a Loan Against Property?<i class="material-icons">add</i><i class="material-icons">remove</i>
                                         </h4>
                                     </div>
                                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="faq-body">
-                                            <p>A Contract loan is a type of secured loan where borrowers pledge their property as collateral to obtain funds from a lender. This loan is typically used to purchase a home or refinance an existing Contract.</p>
+                                            <p>A Loan Against Property is a type of secured loan where borrowers pledge their property as collateral to obtain funds from a lender. This loan is typically used to purchase a home or refinance an existing Contract.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -882,7 +882,7 @@
                                     
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="faq-body">
-                                            <p>Jfinserv offers Contract loans against various types of properties, including residential properties (apartments, houses), commercial properties (office spaces, shops), and land plots.</p>
+                                            <p>Jfinserv offers Loan Against Propertys against various types of properties, including residential properties (apartments, houses), commercial properties (office spaces, shops), and land plots.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -890,11 +890,11 @@
                             <div class="single-widget-one wow fadeInUp" data-wow-delay="0.5s">
                                 <div class="w-100">
                                     <div class="faq-header" id="headingThree">
-                                        <h4 class="mb-0 heading-faq collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">What are the eligibility criteria for availing a Contract loan from Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i></h4>
+                                        <h4 class="mb-0 heading-faq collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">What are the eligibility criteria for availing a Loan Against Property from Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i></h4>
                                     </div>
                                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="faq-body">
-                                            <p>The eligibility criteria for a Contract loan may include factors such as the value of the property, the borrower's income, credit score, employment status, and repayment capacity.</p>
+                                            <p>The eligibility criteria for a Loan Against Property may include factors such as the value of the property, the borrower's income, credit score, employment status, and repayment capacity.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -902,11 +902,11 @@
                             <div class="single-widget-one wow fadeInUp" data-wow-delay="0.7s">
                                 <div class="w-100">
                                     <div class="faq-header" id="headingFour">
-                                        <h4 class="mb-0 heading-faq collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">What documents are required to apply for a Contract loan with Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i></h4>
+                                        <h4 class="mb-0 heading-faq collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">What documents are required to apply for a Loan Against Property with Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i></h4>
                                     </div>
                                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                         <div class="faq-body">
-                                            <p>Common documents required for a Contract loan application include proof of identity, proof of address, income documents (such as salary slips, income tax returns), property documents, and bank statements.</p>
+                                            <p>Common documents required for a Loan Against Property application include proof of identity, proof of address, income documents (such as salary slips, income tax returns), property documents, and bank statements.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -915,12 +915,12 @@
                                 <div class="w-100">
                                     <div class="faq-header" id="headingFive">
                                         <h4 class="mb-0 collapsed heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                                            What is the maximum loan amount and tenure offered for Contract loans by Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i>
+                                            What is the maximum loan amount and tenure offered for Loan Against Propertys by Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i>
                                         </h4>
                                     </div>
                                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                         <div class="faq-body">
-                                            <p>The maximum loan amount and tenure offered for Contract loans depends on factors like value of the property and the borrower's repayment capacity.</p>
+                                            <p>The maximum loan amount and tenure offered for Loan Against Propertys depends on factors like value of the property and the borrower's repayment capacity.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -929,12 +929,12 @@
                                 <div class="w-100">
                                     <div class="faq-header" id="headingSix">
                                         <h4 class="mb-0 collapsed heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseFive">
-                                            What is the process for applying for a Contract loan with Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i>
+                                            What is the process for applying for a Loan Against Property with Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i>
                                         </h4>
                                     </div>
                                     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                         <div class="faq-body">
-                                            <p>The process for applying for a Contract loan with Jfinserv involves filling out an application form, submitting the required documents, undergoing property valuation and legal verification, and loan approval. Our dedicated team of experts will guide you through the process to ensure a smooth experience.</p>
+                                            <p>The process for applying for a Loan Against Property with Jfinserv involves filling out an application form, submitting the required documents, undergoing property valuation and legal verification, and loan approval. Our dedicated team of experts will guide you through the process to ensure a smooth experience.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -994,7 +994,7 @@
                                     <select name="loantype" id="select-loan-type" class="form-control">
                                         <option>Select your Loan</option>
                                         <option id="Home_loan" value="Home Loan">Home Loan</option>
-                                        <option id="Contract Loan" value="Contract Loan">Contract Loan</option>
+                                        <option id="Loan Against Property" value="Loan Against Property">Loan Against Property</option>
                                         <option id="Project Loan" value="Project Loan">Project Loan</option>
                                         <option id="Working Capital" value="Working Capital">Working Capital</option>
                                         <option id="Overdraft Facility" value="Overdraft Facility">Overdraft Facility</option>

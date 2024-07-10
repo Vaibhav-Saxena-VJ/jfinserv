@@ -2204,7 +2204,7 @@
 
                     <div class="contact-form-widget">
 
-                        <form action="{{config('app.baseURL')}}/thankyou" method="post">
+                        <form action="{{config('app.baseURL')}}/contact" method="post">
 
                             {{csrf_field()}}
 
@@ -2232,13 +2232,13 @@
 
                                     <label for="form-sub">Select Loan Requirement</label>
 
-                                    <select name="loan_requirement" id="loan_requirement" class="form-control">
+                                    <select name="amount" id="amount" class="form-control">
 
                                         <option value="" selected disabled hidden>Select Required Amount</option>
 
                                         @foreach ($amount as $paise) {
 
-                                        <option value="<?php echo $paise->id; ?>"><?php echo $paise->amount; ?></option>
+                                        <option value="<?php echo $paise->amount; ?>"><?php echo $paise->amount; ?></option>
 
                                         }
 
@@ -2258,7 +2258,7 @@
 
                                         @foreach ($placeLoan as $place) {
 
-                                        <option value="<?php echo $place->id; ?>"><?php echo $place->place_of_loan; ?></option>
+                                        <option value="<?php echo $place->place_of_loan; ?>"><?php echo $place->place_of_loan; ?></option>
 
                                         }
 

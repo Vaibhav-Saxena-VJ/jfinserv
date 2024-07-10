@@ -38,7 +38,14 @@
       <p>Name : {{$name}}</p>
       <p>Contact No. : {{$phone}}</p>
       <p>Email : {{$email}}</p> 
-      <p>Message : {{$message1}}</p>   
+      <p>Message : {{$message2}}</p>   
+      <p>Loan Type :{{$loantype}}</p>
+      <p>Loan Type : {{$loantype}}</p>
+        <p>Place :  {{$place_loan}}</p>
+        <p>Amount : {{$amount}}</p>
+        <p>Nature of Earning :  {{$nature_earning}}</p>
+        <p>Area jurisdiction :  {{$area_jurisdiction}}</p>
+        <p>Loan Requirement :  {{$loan_requirement}}</p>
     </td>
   </tr>
   <tr>

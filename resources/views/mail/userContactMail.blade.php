@@ -35,13 +35,18 @@
     <td bgcolor="#ffffff" style="padding:5px 20px 20px 20px; color: #555555; font-family: Arial, sans-serif; font-size: 15px; line-height: 24px; border-bottom: 1px solid #f6f6f6;">
       <p><b>Thanks {{$name}} for contacting Jfinserv. We'll get back to you soon.</b></p>
        <h3><b>Contact Details</b></h3>
-      <p>Name : {{$name}}</p>
-      <p>Contact No. : {{$phone}}</p>
-      <p>Email : {{$email}}</p> 
-      <p>Message : {{$message1}}</p>  
+        <p>Name : {{$name}}</p>
+        <p>Contact No. : {{$phone}}</p>
+        <p>Email : {{$email}}</p> 
+        <p>Message : {{$message2}}</p>   
+        <p>Loan Type : {{$loantype}}</p>
+        <p>Place :  {{$place_loan}}</p>
+        <p>Amount : {{$amount}}</p>
+        <p>Nature of Earning :  {{$nature_earning}}</p>
+        <p>Area Jurisdiction :  {{$area_jurisdiction}}</p>
     </td>
   </tr>
-  <tr>
+  <tr>  
     <td align="center" bgcolor="#eee" style="padding: 15px 10px 15px 10px; color: #555555; font-family: Arial, sans-serif; font-size: 12px; line-height: 18px;">
       <center><b>Jfinserv</b><br/></center>
     </td>

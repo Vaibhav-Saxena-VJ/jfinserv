@@ -99,7 +99,7 @@ Route::get('services','PublicController@getHomeLoan');
 Route::get('myrefercode', 'AdminController@myrefercode');
 
 Route::get('home-loan','PublicController@getHomeLoans');
-Route::get('contract-loan','PublicController@getMortgageLoan');
+Route::get('loan-against-property','PublicController@getMortgageLoan');
 Route::get('project-loan','PublicController@getProjectLoan');
 Route::get('overdraft-facility','PublicController@getOverdraftFacility');
 Route::get('lease-rental-discounting','PublicController@getLeaseRentalDiscounting');

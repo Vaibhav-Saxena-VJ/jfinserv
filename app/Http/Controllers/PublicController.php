@@ -492,7 +492,6 @@ class PublicController extends Controller
 		$message2=$request->message;
 		$place_loan=$request->place_loan;
 		$nature_earning=$request->nature_earning;
-		$loan_requirement=$request->loan_requirement;
 		$area_jurisdiction=$request->area_jurisdiction;
 		
 		$user_contact=new Contact();
@@ -504,12 +503,11 @@ class PublicController extends Controller
 		$user_contact->message=$message2;
 		$user_contact->place_loan=$place_loan;
 		$user_contact->nature_earning=$nature_earning;
-		$user_contact->loan_requirement=$loan_requirement;
 		$user_contact->area_jurisdiction=$area_jurisdiction;
 
 		$user_contact->save();
 
-		$data = array('name'=>$name,'email'=>$email,'phone'=>$phone,'loantype'=>$loantype,'amount'=>$amount,'place_loan'=>$place_loan,'nature_earning'=>$nature_earning,'loan_requirement'=>$loan_requirement,'area_jurisdiction'=>$area_jurisdiction,'message2'=>$message2);
+		$data = array('name'=>$name,'email'=>$email,'phone'=>$phone,'loantype'=>$loantype,'amount'=>$amount,'place_loan'=>$place_loan,'nature_earning'=>$nature_earning,'area_jurisdiction'=>$area_jurisdiction,'message2'=>$message2);
 
 		try{
 		    Mail::send('mail/thanksMail', $data, function($message) use ($email,$name){
