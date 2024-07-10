@@ -1,14 +1,14 @@
-@extends('layouts.app')
-
-@section('title', "Best Home Loan Rates in Pune | Home Loan in Pune - Jfinserv")
-
-@section('description', "Unlock your dream home with JFInserv's personalized best home loan rates in pune. Your pathway to home loan in pune and PCMC!")
-
-@section('keywords', "best home loan rates in pune, home loan in pune, Home Loans in Pune, Housing Finance in Pune, Homeownership in PCMC, Property Loans in Pune, Real Estate Financing in Pune, Housing Loans in Pune")
 
 
+<?php $__env->startSection('title', "MSME and Business loans in Pune | Business loan services in PCMC - Jfinserv"); ?>
 
-@section('content')
+<?php $__env->startSection('description', "Jfinserv offers MSME and Business loans in Pune with competitive rates, flexible repayment options, and a quick application process for Business loan services in PCMC and Pune."); ?>
+
+<?php $__env->startSection('keywords', "MSME loans in Pune, MSME Loans services in  pune, small business financing, SME loans, business growth funding, financial support for entrepreneurs"); ?>
+
+
+
+<?php $__env->startSection('content'); ?>
 
 <style type="text/css">
 
@@ -36,7 +36,7 @@
 
 
 
-    @media only screen and (min-width: 800px) and (max-width: 1700px){
+    @media  only screen and (min-width: 800px) and (max-width: 1700px){
 
         canvas#simple-pie-chart{
 
@@ -174,7 +174,7 @@
 
   
 
-    @media only screen and (min-width: 800px){
+    @media  only screen and (min-width: 800px){
 
       .bar-chart-padding{
 
@@ -188,7 +188,7 @@
 
 
 
-    @media only screen and (max-width: 767px){ 
+    @media  only screen and (max-width: 767px){ 
 
         canvas#simple-pie-chart{
 
@@ -538,7 +538,7 @@
 
 
 
-    .select-new{
+.select-new{
 
         border: none !important;
 
@@ -604,7 +604,7 @@
 
 /*header*/
 
-    @media screen and (min-width: 300px) and (max-width: 768px){
+    @media  screen and (min-width: 300px) and (max-width: 768px){
 
         .img-fluid, .icon_mail_alt{
 
@@ -664,7 +664,7 @@
 
             font-size: 3em !important;
 
-            top: 7% !important;
+            top: 6% !important;
 
             left: 0px !important;
 
@@ -674,7 +674,7 @@
 
     
 
-    @media screen and (min-width: 801px) and (max-width: 2000px){
+    @media  screen and (min-width: 801px) and (max-width: 2000px){
 
         .icon_clock_alt{
 
@@ -688,7 +688,7 @@
 
     /*CSS for mobile view*/
 
-    @media screen and (min-width: 300px) and (max-width: 400px){
+    @media  screen and (min-width: 300px) and (max-width: 400px){
 
         .d-lg-block{
 
@@ -734,7 +734,7 @@
 
    
 
-    @media screen and (min-width: 401px) and (max-width: 500px){
+    @media  screen and (min-width: 401px) and (max-width: 500px){
 
         .d-lg-block{
 
@@ -780,7 +780,7 @@
 
 
 
-    @media screen and (min-width: 501px) and (max-width: 700px){
+    @media  screen and (min-width: 501px) and (max-width: 700px){
 
         .d-lg-block{
 
@@ -826,7 +826,7 @@
 
 
 
-    @media screen and (min-width: 701px) and (max-width: 768px){
+    @media  screen and (min-width: 701px) and (max-width: 768px){
 
         .d-lg-block{
 
@@ -928,24 +928,6 @@
 
     
 
-    ul.bnr-description{
-
-        display: inline-flex;
-
-    }
-
-    
-
-    ul.bnr-description li:nth-child(2):after, ul.bnr-description li:nth-child(2):before{
-
-        content: '|';
-
-        margin: 0 20px;
-
-    }
-
-    
-
     .faq-body ol, .faq-body ul {
 
         padding-left: 2rem;
@@ -972,7 +954,7 @@
 
         top: 12%;
 
-        left: -28px;
+        left: -27px;
 
     }
 
@@ -1020,6 +1002,24 @@
 
     
 
+    ul.bnr-description{
+
+        display: inline-flex;
+
+    }
+
+    
+
+    ul.bnr-description li:nth-child(2):after, ul.bnr-description li:nth-child(2):before{
+
+        content: '|';
+
+        margin: 0 20px;
+
+    }
+
+    
+
     .process-steps {
 
         background: url(https://jfinserv.com/assets/img/loan-steps-info.png);
@@ -1042,7 +1042,7 @@
 
     <!-- Banner start -->
 
-    <section class="banner-area-2 loan-banner pt-20" style="background-image: url(http://jfinserv.com/assets/img/banner/loan-banner-N.png)">
+    <section class="banner-area-2 loan-banner pt-20" style="background-image: url(http://jfinserv.com/assets/img/banner/loan-banner.png)">
 
         <div class="container">
 
@@ -1054,9 +1054,9 @@
 
                         <div class="section-title">
 
-                            <h1 class="wow fadeInUp" style="font-size: 40px;">Secure Your Dream Home <br>with Easy Home Loans</h1>
+                            <h1 class="wow fadeInUp" style="font-size: 40px;">MSME Loan Solutions </h1>
 
-                            <ul class="display-8 text-top wow fadeInUp mt-3 bnr-description" style="color: #fff;">
+                            <ul class="display-8 text-top wow fadeInUp pt-3 bnr-description" style="color: #fff;">
 
                                 <li><i class="fa-solid fa-percent"></i> Low Interest Rate</li>
 
@@ -1094,19 +1094,21 @@
 
             <div class="row justify-content-center">
 
-                <div class="col-md-12 box-height">
+                <div class="col-md-12 box-height mb-3">
 
                     <p class="Block-quote"><i class="fa-solid fa-quote-left"></i></p>
 
-                    <p class="display-8 text-top wow fadeInUp bnr-description brdr-Block">We're dedicated to being your trusted companion on the journey to realizing your dream home. We acknowledge that buying a home is one of life's most significant financial decisions. With our array of customizable home loan options, we're here to assist you at every turn, ensuring a seamless and stress-free process.</p>
-
-                    <!--<span>Best Creative digital Agency</span>-->
-
-                    <h2 class="display-8 text-top mt-3 pt-5 text-center wow fadeInUp" data-wow-delay="0.1s"><span style="color: #D83733;">Eligibility</span> for a Home Loan</h2>
+                    <p class="display-8 text-top wow fadeInUp bnr-description brdr-Block">Jfinserv understands the pivotal role that Micro, Small, and Medium Enterprises (MSMEs) play in driving economic growth and fostering innovation. That's why we're committed to support your entrepreneurial journey with financial solutions designed to fuel your success.<br/><br/>Our MSME Loan offerings are crafted to address the diverse needs of small and medium-sized businesses across various sectors. Whether you're looking to expand operations, invest in new equipment, boost working capital, or pursue any other growth opportunity, Jfinserv is here to help you every step of the way.</p>
 
                 </div>
 
-                <div class="col-md-6">
+            </div>
+
+            
+
+            <div class="row box pt-3 mb-5">
+
+                <div class="col-md-12">
 
                     <div class="faq-widget">
 
@@ -1118,7 +1120,7 @@
 
                                     <div class="faq-header" id="headingOne">
 
-                                        <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Age:<i class="material-icons">add</i><i class="material-icons">remove</i>
+                                        <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span style="color: #d83733;">Eligibility Criteria</span> for a MSME Loan<i class="material-icons">add</i><i class="material-icons">remove</i>
 
                                         </h4>
 
@@ -1128,45 +1130,27 @@
 
                                         <div class="faq-body">
 
-                                            <ul>
-
-                                                <li>You need to be at least 21 years old when your loan begins and no older than 65 when the loan term ends.</li>
-
-                                                <li>Salaried Person - 21 years to 58 years</li>
-
-                                                <li>Self-Employed Person - 25 years to 65 years</li>
-
-                                            </ul>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="single-widget-one wow fadeInUp" data-wow-delay="0.1s">
-
-                                <div class="w-100">
-
-                                    <div class="faq-header" id="headingTwo">
-
-                                        <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Income:<i class="material-icons">add</i><i class="material-icons">remove</i>
-
-                                        </h4>
-
-                                    </div>
-
-                                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-
-                                        <div class="faq-body">
+                                            <p>To qualify for a Jfinserv MSME Loan, your business must meet the following eligibility criteria:</p>
 
                                             <ul>
 
-                                                <li>Salaried Person - Minimum Rs. 10,000 per month</li>
+                                                <li>Registered as a Micro, Small, or Medium Enterprise as per the Government of India's MSME classification.</li>
 
-                                                <li>Self-Employed Person - Minimum Rs. 2,00,000 per year</li>
+                                                <li>Positive business track record and financial stability.</li>
+
+                                                <li>Satisfactory credit history and repayment capacity.</li>
+
+                                                <li>Proprietorship | Partnerships | Limited Liability Partnership</li>
+
+                                                <li>Private Limited Company | Limited Company</li>
+
+                                                <li>An Enterprise should have at least five years of operations for the business.</li>
+
+                                                <li>Minimum turnover of Rs. 40 lacs in the manufacturing and trading industries, and Rs.15 lacs in the service industry.</li>
+
+                                                <li>Cash profit for the previous two years | Clear banking and loan payment history</li>
+
+                                                <li>Positive business net worth | Demonstrated growth in turnover</li>
 
                                             </ul>
 
@@ -1180,253 +1164,41 @@
 
                         </div>
 
-                    </div>
-
-                </div>
-
-                <div class="col-md-6">
-
-                    <div class="faq-widget">
-
                         <div class="accordion" id="accordionExample">
 
                             <div class="single-widget-one wow fadeInUp" data-wow-delay="0.1s">
-
-                                <div class="w-100">
-
-                                    <div class="faq-header" id="headingThree">
-
-                                        <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Employment:<i class="material-icons">add</i><i class="material-icons">remove</i>
-
-                                        </h4>
-
-                                    </div>
-
-                                    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-
-                                        <div class="faq-body">
-
-                                            <ul>
-
-                                                <li>Salaried Person - Minimum 2 to 3 years of Experience in MNC, or a Private or Public Limited Company</li>
-
-                                                <li>Self-Employed Person - Minimum 3 years of Experience in the current field</li>
-
-                                            </ul>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="single-widget-one wow fadeInUp" data-wow-delay="0.1s">
-
-                                <div class="w-100">
-
-                                    <div class="faq-header" id="headingFour">
-
-                                        <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Credit Score:<i class="material-icons">add</i><i class="material-icons">remove</i>
-
-                                        </h4>
-
-                                    </div>
-
-                                    <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-
-                                        <div class="faq-body">
-
-                                            <ul>
-
-                                                <li>A credit score of 750 is considered a good score for approval.</li>
-
-                                                <li style="visibility: hidden;">x</li>
-
-                                            </ul>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            
-
-            <div class="row box">
-
-                <h2 class="display-8 text-top mt-3 pt-5 text-center wow fadeInUp" data-wow-delay="0.1s"><span style="color: #D83733;">Required Documents</span> for a Home Loan</h2>
-
-                <div class="col-md-4">
-
-                    <div class="faq-widget">
-
-                        <div class="accordion" id="accordionExample">
-
-                            <div class="single-widget-one wow fadeInUp" data-wow-delay="0.3s">
 
                                 <div class="w-100">
 
                                     <div class="faq-header" id="heading1">
 
-                                        <h4 class="mb-0 heading-faq collapsed" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Salaried Individuals:<i class="material-icons">add</i><i class="material-icons">remove</i></h4>
+                                        <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1"><span style="color: #d83733;">Documents Required</span> for a MSME Loan<i class="material-icons">add</i><i class="material-icons">remove</i>
+
+                                        </h4>
 
                                     </div>
 
-                                    
-
-                                    <div id="collapse1" class="collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                                    <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-bs-parent="#accordionExample">
 
                                         <div class="faq-body">
 
                                             <ul>
 
-                                                <li>Form 16</li>
+                                                <li>Business Plan | Proof of Identity | Proof of Address</li>
 
-                                                <li>Employee Identity Card</li>
+                                                <li>Business Registration Documents | Financial Statements</li>
 
-                                                <li>3 Months’ Salary Slip</li>
+                                                <li>Collateral Documents | MSME Registration Certificate</li>
 
-                                                <li>6 Month Bank Account Statement</li>
+                                                <li>Project Report | Credit History | Other Legal Documents</li>
 
-                                                <li>Duration of Employment Evidence</li>
+                                                <li>Incorporation documents and Bank statements for the past 6 months.</li>
 
-                                            </ul>
+                                                <li>Validation proof and tax receipts for the current years turnover.</li>
 
-                                        </div>
+                                                <li>Bank statements of the last 6 months.</li>
 
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="faq-widget">
-
-                        <div class="accordion" id="accordionExample">
-
-                            <div class="single-widget-one wow fadeInUp" data-wow-delay="0.1s">
-
-                                <div class="w-100">
-
-                                    <div class="faq-header" id="heading2">
-
-                                        <h4 class="mb-0 heading-faq collapsed" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">Self-Employed Individuals:<i class="material-icons">add</i><i class="material-icons">remove</i></h4>
-
-                                    </div>
-
-                                    
-
-                                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
-
-                                        <div class="faq-body">
-
-                                            <ul>
-
-                                                <li>PAN | Trade License | Partnership Deed</li>
-
-                                                <li>Article of Association</li>
-
-                                                <li>Memorandum of Association</li>
-
-                                                <li>Import Export Code | Balance Sheet</li>
-
-                                                <li>SEBI Registration Certificate</li>
-
-                                                <li>ROC Registration Certificate</li>
-
-                                                <li>Financial Statement Audited by CA</li>
-
-                                                <li>Profit & Loss Account Statement</li>
-
-                                                <li>6 Months Bank Account Statement</li>
-
-                                                <li>Business Address Proof, etc.</li>
-
-                                                <li>Professional Practice License for Doctors, Consultants, etc.</li>
-
-                                                <li>Registration Certificate of Establishment for Shops, Factories, and Other Establishments.</li>
-
-                                            </ul>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="faq-widget">
-
-                        <div class="accordion" id="accordionExample">
-
-                            <div class="single-widget-one wow fadeInUp" data-wow-delay="0.1s">
-
-                                <div class="w-100">
-
-                                    <div class="faq-header" id="heading3">
-
-                                        <h4 class="mb-0 heading-faq collapsed" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">For All NRIs Applicants:<i class="material-icons">add</i><i class="material-icons">remove</i></h4>
-
-                                    </div>
-
-                                    
-
-                                    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
-
-                                        <div class="faq-body">
-
-                                            <ul>
-
-                                                <li>Income Proof Documents for NRI</li>
-
-                                                <li>Property Papers | Property Documents</li>
-
-                                                <li>Sale Deed | Allotment Letter</li>
-
-                                                <li>Stamped Agreement of Sale</li>
-
-                                                <li>No Objection Certificate or NOC</li>
-
-                                                <li>Possession Certificate</li>
-
-                                                <li>Land Tax Receipt</li>
-
-                                                <li>Construction Cost Estimate</li>
-
-                                                <li>Occupancy Certificate</li>
-
-                                                <li>Bank Account Statement of Payment Made to Seller or Builder</li>
-
-                                                <li>Payment Receipt of Payment Made to Seller or Builder</li>
+                                                <li>KYC documents | Relevant collateral documents</li>
 
                                             </ul>
 
@@ -1448,21 +1220,21 @@
 
             
 
-            <div class="row box">
+            <div class="row box mt-3">
 
-                <h2 class="display-8 text-top mt-5 pt-5 pb-3 text-center wow fadeInUp" data-wow-delay="0.1s">Features of <span style="color: #4da9ea;">Jfinserv</span> Home Loan</h2>
+                <h2 class="display-8 text-top text-center pt-4 pb-4">Key Features of <span style="color: #4da9ea;">Jfinserv</span> MSME Loans</h2>
 
                 <div class="col-md-6 col-lg-4 mb-3 mb-md-4 d-flex">
 
                     <div class="card hover-box-shadow">
 
-                        <img class="card-img-top hover-fade-out img-img" src="{{config('app.baseURL')}}/images/service/cir.jpg" alt="Competitive Interest Rates:">
+                        <img class="card-img-top hover-fade-out img-img" src="<?php echo e(config('app.baseURL')); ?>/images/service/fro.jpg" alt="Edutech chatbot">
 
                         <div class="card-body">
 
-                            <h3 style="font-size: 18px !important;font-weight: 700;">Competitive Interest Rates: </h3>
+                            <h3 style="font-size: 18px !important;font-weight: 700;">Flexible Financing Options:</h3>
 
-                            <p style="font-size: 14px !important;">Take advantage of our competitive interest rates, guaranteeing that you can comfortably afford your dream home while safeguarding your financial stability.<br/></p>
+                            <p style="font-size: 14px !important;">We offer a range of financing options tailored to suit the unique requirements of your business, ensuring flexibility and ease of repayment.<br/></p>
 
                         </div>
 
@@ -1476,13 +1248,13 @@
 
                     <div class="card hover-box-shadow">
 
-                        <img class="card-img-top hover-fade-out img-img" src="{{config('app.baseURL')}}/images/service/fro.jpg" alt="Flexible Repayment Options">
+                        <img class="card-img-top hover-fade-out img-img" src="<?php echo e(config('app.baseURL')); ?>/images/service/cir.jpg" alt="Edutech chatbot">
 
                         <div class="card-body">
 
-                            <h3 style="font-size: 18px !important;font-weight: 700;">Flexible Repayment Options:</h3>
+                            <h3 style="font-size: 18px !important;font-weight: 700;">Competitive Interest Rates:</h3>
 
-                            <p style="font-size: 14px !important;">Customize your repayment schedule to align with your financial capacity, whether you opt for a shorter duration to minimize interest costs or a longer duration for more manageable monthly payments.<br/></p>
+                            <p style="font-size: 14px !important;">Benefit from competitive interest rates that are designed to make your borrowing experience affordable and cost-effective.<br/></p>
 
                         </div>
 
@@ -1496,13 +1268,13 @@
 
                     <div class="card hover-box-shadow">
 
-                        <img class="card-img-top hover-fade-out img-img" src="{{config('app.baseURL')}}/images/service/sap.jpg" alt="Simple Application Process">
+                        <img class="card-img-top hover-fade-out img-img" src="<?php echo e(config('app.baseURL')); ?>/images/service/sap.jpg" alt="Edutech chatbot">
 
                         <div class="card-body">
 
-                            <h3 style="font-size: 18px !important;font-weight: 700;">Simple Application Process: </h3>
+                            <h3 style="font-size: 18px !important;font-weight: 700;">Quick and Hassle-free Processing:</h3>
 
-                            <p style="font-size: 14px !important;">Easily apply for a home loan from the convenience of your own home through our intuitive online application process, saving you valuable time and effort.<br/></p>
+                            <p style="font-size: 14px !important;">With streamlined processes and minimal documentation requirements, we ensure a quick and hassle-free loan approval process, allowing you to focus on what matters most – growing your business.<br/></p>
 
                         </div>
 
@@ -1516,13 +1288,33 @@
 
                     <div class="card hover-box-shadow">
 
-                        <img class="card-img-top hover-fade-out img-img" src="{{config('app.baseURL')}}/images/service/tc.jpg" alt="Transparent Terms &amp; Conditions">
+                        <img class="card-img-top hover-fade-out img-img" src="<?php echo e(config('app.baseURL')); ?>/images/msme-loan.jpg" alt="Edutech chatbot">
+
+                        <div class="card-body">
+
+                            <h3 style="font-size: 18px !important;font-weight: 700;">Personalized Support:</h3>
+
+                            <p style="font-size: 14px !important;">Our team of experienced financial advisors is dedicated to providing personalized support and guidance at every stage of your loan journey, ensuring that you have the assistance you need to make informed decisions.<br/></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="col-md-6 col-lg-4 mb-3 mb-md-4 d-flex">
+
+                    <div class="card hover-box-shadow">
+
+                        <img class="card-img-top hover-fade-out img-img" src="<?php echo e(config('app.baseURL')); ?>/images/service/tc.jpg" alt="Edutech chatbot">
 
                         <div class="card-body">
 
                             <h3 style="font-size: 18px !important;font-weight: 700;">Transparent Terms &amp; Conditions: </h3>
 
-                            <p style="font-size: 14px !important;">Transparency is our cornerstone. From the outset, you'll have complete clarity with no hidden fees or surprises along the way. You'll be fully informed about all terms and conditions from the start.<br/></p>
+                            <p style="font-size: 14px !important;">We believe in transparency and integrity. That's why we ensure that our terms and conditions are clear and easy to understand, so you know exactly what you're getting into.<br/></p>
 
                         </div>
 
@@ -1536,27 +1328,7 @@
 
                     <div class="card hover-box-shadow">
 
-                        <img class="card-img-top hover-fade-out img-img" src="{{config('app.baseURL')}}/images/service/qad.jpg" alt="Quick Approval and Disbursal">
-
-                        <div class="card-body">
-
-                            <h3 style="font-size: 18px !important;font-weight: 700;">Quick Approval and Disbursal: </h3>
-
-                            <p style="font-size: 14px !important;">We comprehend the importance of achieving your dream home promptly. With our swift approval and disbursement process, you'll find yourself stepping into your new home sooner than you expect.<br/></p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                
-
-                <div class="col-md-6 col-lg-4 mb-3 mb-md-4 d-flex">
-
-                    <div class="card hover-box-shadow">
-
-                        <img class="card-img-top hover-fade-out img-img" src="{{config('app.baseURL')}}/images/service/zfc.jpg" alt="No Foreclosure Charges">
+                        <img class="card-img-top hover-fade-out img-img" src="<?php echo e(config('app.baseURL')); ?>/images/service/zfc.jpg" alt="Edutech chatbot">
 
                         <div class="card-body">
 
@@ -1578,7 +1350,7 @@
 
     
 
-    <section class="row no-gutters bg-white pt-80 pb-80" id="HomeLoanCalculator">
+    <section class="row no-gutters bg-white pb-80 pt-80" id="HomeLoanCalculator">
 
         <div class="container">
 
@@ -1590,7 +1362,7 @@
 
                         <h2 class="wow fadeInUp">Loan Calculator</h2>
 
-                        <p class="wow fadeInUp" data-wow-delay="0.3s">Get an approximate figure for the total monthly instalment payments along with a complete break-up of the home loan.</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.3s">Receive an estimated total of your monthly installment payments, including a detailed breakdown of the MSME loan.</p>
 
                     </div>
 
@@ -1612,11 +1384,11 @@
 
                                <div class="row calc">
 
-                                    <div class="card card-body bg_disable text-left text-dark">
+                                    <div class="card card-body bg_disable text-left text-dark" style="padding: 1.50rem;">
 
-                                        <form method="post" action="{{config('app.baseURL')}}/loans/loan-enquiry/3" enctype='multipart/form-data'>
+                                        <form method="post" action="<?php echo e(config('app.baseURL')); ?>/loans/loan-enquiry/3" enctype='multipart/form-data'>
 
-                                            <input type="hidden" name="_token" value="{{csrf_token()}}">
+                                            <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
 
                                             <label for="LoanRange" class="finance-details">Loan Amount</label>
 
@@ -1682,7 +1454,7 @@
 
                                                 <input type="hidden" name="monthly_emi" class="monthly_emi" value="">
 
-                                                <a href="{{config('app.baseURL')}}/apply-now" class="theme-btn theme-btn-lg mt-40" target="_blank">Apply Now <i class="arrow_right"></i></a>
+                                                <a href="<?php echo e(config('app.baseURL')); ?>/apply-now" class="theme-btn theme-btn-lg mt-40" target="_blank">Apply Now <i class="arrow_right"></i></a>
 
                                             </div>
 
@@ -1740,7 +1512,7 @@
 
                     <div class="section-title">
 
-                        <h2 class="wow fadeInUp">One Step Closer To Finding Your <span style="color: #D83733;">Perfect Home!</span></h2>
+                        <h2 class="wow fadeInUp">One Step Closer To Finding Your <span style="color: #d83733;">Perfect Loan!</span></h2>
 
                     </div>
 
@@ -1756,7 +1528,7 @@
 
             
 
-            <form action="{{config('app.baseURL')}}/apply-now">
+            <form action="<?php echo e(config('app.baseURL')); ?>/apply-now">
 
                 <div class="row">
 
@@ -1770,9 +1542,9 @@
 
                                     <div class="icon">
 
-                                        <img src="{{config('app.baseURL')}}/assets/img/apply-loan/icon-1.1.png" alt="icon-1">
+                                        <img src="<?php echo e(config('app.baseURL')); ?>/assets/img/apply-loan/icon-1.1.png" alt="icon-1">
 
-                                        <img src="{{config('app.baseURL')}}/assets/img/apply-loan/icon-1.2.png" alt="icon-1.2">
+                                        <img src="<?php echo e(config('app.baseURL')); ?>/assets/img/apply-loan/icon-1.2.png" alt="icon-1.2">
 
                                     </div>
 
@@ -1794,9 +1566,9 @@
 
                                     <div class="icon">
 
-                                        <img src="{{config('app.baseURL')}}/assets/img/apply-loan/icon-2.1.png" alt="icon-2">
+                                        <img src="<?php echo e(config('app.baseURL')); ?>/assets/img/apply-loan/icon-2.1.png" alt="icon-2">
 
-                                        <img src="{{config('app.baseURL')}}/assets/img/apply-loan/icon-2.2.png" alt="icon-2.2">
+                                        <img src="<?php echo e(config('app.baseURL')); ?>/assets/img/apply-loan/icon-2.2.png" alt="icon-2.2">
 
                                     </div>
 
@@ -1836,9 +1608,9 @@
 
                                     <div class="icon">
 
-                                        <img src="{{config('app.baseURL')}}/assets/img/apply-loan/icon-3.1.png" alt="icon-3">
+                                        <img src="<?php echo e(config('app.baseURL')); ?>/assets/img/apply-loan/icon-3.1.png" alt="icon-3">
 
-                                        <img src="{{config('app.baseURL')}}/assets/img/apply-loan/icon-3.2.png" alt="icon-3.2">
+                                        <img src="<?php echo e(config('app.baseURL')); ?>/assets/img/apply-loan/icon-3.2.png" alt="icon-3.2">
 
                                     </div>
 
@@ -1874,7 +1646,7 @@
 
                                 <div class="icon">
 
-                                    <img class="img=fluid" src="{{config('app.baseURL')}}/assets/img/steps/sheild.png" alt="sheild">
+                                    <img class="img=fluid" src="<?php echo e(config('app.baseURL')); ?>/assets/img/steps/sheild.png" alt="sheild">
 
                                 </div>
 
@@ -1886,9 +1658,7 @@
 
                             <div class="col-12 text-center mt-35">
 
-                                <button class="theme-btn theme-btn-lg wow fadeInUp" type="submit" formtarget="_blank">Apply now <i class="arrow_right"></i>
-
-                                </button>
+                                <button class="theme-btn theme-btn-lg wow fadeInUp" type="submit" formtarget="_blank">Apply now <i class="arrow_right"></i></button>
 
                             </div>
 
@@ -1932,7 +1702,7 @@
 
                                     <div class="faq-header" id="headingOne">
 
-                                        <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What is a home loan?<i class="material-icons">add</i><i class="material-icons">remove</i>
+                                        <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What is an MSME loan?<i class="material-icons">add</i><i class="material-icons">remove</i>
 
                                         </h4>
 
@@ -1942,7 +1712,7 @@
 
                                         <div class="faq-body">
 
-                                            <p>A home loan is a loan provided by a financial organisation to help individuals or families purchase a home. It allows borrowers to finance the purchase of a property by borrowing money from the lender and repaying it over a specified period of time, along with interest.</p>
+                                            <p>An MSME loan is a financial product specifically designed to meet the funding requirements of Micro, Small, and Medium Enterprises (MSMEs). These loans are tailored to address the diverse needs of small and medium-sized businesses across various sectors.</p>
 
                                         </div>
 
@@ -1960,7 +1730,7 @@
 
                                     <div class="faq-header" id="headingTwo">
 
-                                        <h4 class="mb-0 heading-faq collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">What documents are required for a salaried individual to apply for a home loan?<i class="material-icons">add</i><i class="material-icons">remove</i></h4>
+                                        <h4 class="mb-0 heading-faq collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">What types of MSME loans does Jfinserv offer?<i class="material-icons">add</i><i class="material-icons">remove</i></h4>
 
                                     </div>
 
@@ -1970,17 +1740,7 @@
 
                                         <div class="faq-body">
 
-                                            <p>Following documents of a salaried person are needed to apply for home loan.</p>
-
-                                            <ul>
-
-                                                <li>KYC documents (identity and address proof)</li>
-
-                                                <li>Income proof (Salary slips)</li>
-
-                                                <li>Last 6 months account statements</li>
-
-                                            </ul>
+                                            <p>Jfinserv offers a range of MSME loans, including working capital loans, term loans, machinery loans, business expansion loans, and loans for technology upgrades, among others, to support the growth and development of MSMEs.</p>
 
                                         </div>
 
@@ -1996,7 +1756,7 @@
 
                                     <div class="faq-header" id="headingThree">
 
-                                        <h4 class="mb-0 heading-faq collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">What documents are required for a self-employed individual to apply for a home loan?<i class="material-icons">add</i><i class="material-icons">remove</i></h4>
+                                        <h4 class="mb-0 heading-faq collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">What are the eligibility criteria for availing an MSME loan from Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i></h4>
 
                                     </div>
 
@@ -2004,19 +1764,7 @@
 
                                         <div class="faq-body">
 
-                                            <p>Following documents of a salaried person are needed to apply for home loan.</p>
-
-                                            <ul>
-
-                                                <li>KYC documents (identity and address proof)</li>
-
-                                                <li>Income proof (P & L Statement)</li>
-
-                                                <li>Last 6 months account statements</li>
-
-                                                <li>Business Proof</li>
-
-                                            </ul>
+                                            <p>The eligibility criteria for an MSME loan include factors such as the business's vintage, turnover, creditworthiness, repayment capacity, and compliance with regulatory requirements. Jfinserv aims to provide financial assistance to a wide range of MSMEs.</p>
 
                                         </div>
 
@@ -2032,7 +1780,7 @@
 
                                     <div class="faq-header" id="headingFour">
 
-                                        <h4 class="mb-0 heading-faq collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">What are the interest rates for home loans offered by Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i></h4>
+                                        <h4 class="mb-0 heading-faq collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">What documents are required to apply for an MSME loan with Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i></h4>
 
                                     </div>
 
@@ -2040,7 +1788,7 @@
 
                                         <div class="faq-body">
 
-                                            <p>The interest rate for home loans offered by Jfinserv is based on market conditions, the loan amount, tenure, and the applicant's credit profile. Jfinserv strives to offer competitive interest rates to make home ownership affordable for its customers.</p>
+                                            <p>Common documents required for applying for an MSME loan may include business registration documents, financial statements (balance sheet, profit and loss statement), income tax returns, KYC documents of the business owners, and any other documents as per Jfinserv's requirements.</p>
 
                                         </div>
 
@@ -2056,9 +1804,7 @@
 
                                     <div class="faq-header" id="headingFive">
 
-                                        <h4 class="mb-0 collapsed heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-
-                                            What is the maximum loan amount and tenure offered for home loans by Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i>
+                                        <h4 class="mb-0 collapsed heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">What is the maximum loan amount and tenure offered for MSME loans by Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i>
 
                                         </h4>
 
@@ -2068,7 +1814,7 @@
 
                                         <div class="faq-body">
 
-                                            <p>The maximum loan amount and tenure offered for home loans may vary depending on factors like applicant's income, repayment capacity, and the value of the property. Jfinserv offers competitive loan amounts and flexible repayment tenures to suit the needs of borrowers.</p>
+                                            <p>The maximum loan amount and tenure offered for MSME loans are depends on factors such as the business's financial performance, repayment capacity, and the specific loan product available. Jfinserv strives to offer competitive loan amounts and flexible repayment tenures.</p>
 
                                         </div>
 
@@ -2084,9 +1830,7 @@
 
                                     <div class="faq-header" id="headingSix">
 
-                                        <h4 class="mb-0 collapsed heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseFive">
-
-                                            What is the process for applying for a home loan with Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i>
+                                        <h4 class="mb-0 collapsed heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">What are the interest rates for MSME loans offered by Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i>
 
                                         </h4>
 
@@ -2096,7 +1840,7 @@
 
                                         <div class="faq-body">
 
-                                            <p>The process for applying for a home loan involves, filling out an application form, submitting the required documents, undergoing credit appraisal, property valuation, and loan approval. Our dedicated team of experts will assist you at every step of the application process to ensure a smooth and hassle-free experience.</p>
+                                            <p>Interest rates for MSME loans offered by Jfinserv are based on factors like market conditions, the loan amount, tenure, and the borrower's credit profile. Jfinserv aims to provide competitive interest rates to make MSME financing affordable for its clients.</p>
 
                                         </div>
 
@@ -2112,9 +1856,7 @@
 
                                     <div class="faq-header" id="headingSeven">
 
-                                        <h4 class="mb-0 collapsed heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseFive">
-
-                                            What are the different types of home loans offered by Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i>
+                                        <h4 class="mb-0 collapsed heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">What is the process for applying for an MSME loan with Jfinserv?<i class="material-icons">add</i><i class="material-icons">remove</i>
 
                                         </h4>
 
@@ -2124,7 +1866,7 @@
 
                                         <div class="faq-body">
 
-                                            <p>Jfinserv offers various types of home loans to meet the diverse needs of customers, including home purchase loans, home construction loans, home improvement loans, and balance transfer loans. Each type of loan is designed to address specific requirements related to buying, constructing, or renovating a home.</p>
+                                            <p>The process for applying for an MSME loan with Jfinserv involves filling out an application form, submitting the required documents, undergoing credit appraisal, business evaluation, and loan approval. Our dedicated team of experts will guide you through the process to ensure a smooth experience.</p>
 
                                         </div>
 
@@ -2204,87 +1946,14 @@
 
                     <div class="contact-form-widget">
 
-                        <form action="{{config('app.baseURL')}}/thankyou" method="post">
+                        <form action="<?php echo e(config('http://127.0.0.1:8000')); ?>/thankyou" method="post">
 
-                            {{csrf_field()}}
+                            <?php echo e(csrf_field()); ?>
+
 
                             <div class="row fadeInUp">
 
-                                <div class="col-md-6">
-
-                                    <label for="form-sub">Specify the Nature of Earning</label>
-
-                                    <select name="nature_earning" id="nature_earning" class="form-control">
-
-                                        <option value="" disabled selected hidden>Select Nature of Earning</option>
-
-                                        <option value="Salaried">Salaried</option>
-
-                                        <option value="Self Employed">Self Employed Professional</option>
-
-                                        <option value="Self Employed Non Professional">Self Employed Non Professional</option>
-
-                                    </select>
-
-                                </div>
-
-                                <div class="col-md-6">
-
-                                    <label for="form-sub">Select Loan Requirement</label>
-
-                                    <select name="loan_requirement" id="loan_requirement" class="form-control">
-
-                                        <option value="" selected disabled hidden>Select Required Amount</option>
-
-                                        @foreach ($amount as $paise) {
-
-                                        <option value="<?php echo $paise->id; ?>"><?php echo $paise->amount; ?></option>
-
-                                        }
-
-                                        @endforeach
-
-                                    </select>
-
-                                </div>
-
-                                <div class="col-md-6 mt-20">
-
-                                    <label for="form-sub">Place for Loan</label>
-
-                                    <select name="place_loan" id="place_loan" class="form-control">
-
-                                        <option value="" selected disabled hidden>Select Location</option>
-
-                                        @foreach ($placeLoan as $place) {
-
-                                        <option value="<?php echo $place->id; ?>"><?php echo $place->place_of_loan; ?></option>
-
-                                        }
-
-                                        @endforeach
-
-                                    </select>
-
-                                </div>
-
-                                <div class="col-md-6 mt-20">
-
-                                    <label for="form-sub">Area of Jurisdiction</label>
-
-                                    <select name="area_jurisdiction" id="area_jurisdiction" class="form-control">
-
-                                        <option value="" selected disabled hidden>Choose Area</option>
-
-                                        <option value="Corporate">Corporation</option>
-
-                                        <option value="Gram Panchayat">Gram Panchayat</option>
-
-                                    </select>
-
-                                </div>
-
-                                <div class="col-md-4 mt-20">
+                                <div class="col-md-4">
 
                                     <label for="f-name">Name</label>
 
@@ -2292,7 +1961,7 @@
 
                                 </div>
 
-                                <div class="col-md-4 mt-20">
+                                <div class="col-md-4 mt-20 mt-md-0">
 
                                     <label for="email-address">Email</label>
 
@@ -2300,11 +1969,75 @@
 
                                 </div>
 
-                                <div class="col-md-4 mt-20">
+                                <div class="col-md-4 mt-20 mt-md-0">
 
                                     <label for="form-sub">Phone Number</label>
 
                                     <input type="tel" id="form-sub" name="phone" class="form-control" placeholder="Phone Number" required="">
+
+                                </div>
+
+                                <div class="col-md-4 mt-20">
+
+                                    <label for="form-sub">Loan Type</label>
+
+                                    <select name="loantype" id="select-loan-type" class="form-control">
+
+                                        <option>Select your Loan</option>
+
+                                        <?php $__currentLoopData = $loantype; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $type): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?> {
+
+                                        <option value="<?php echo $type->type; ?>"><?php echo $type->type; ?></option>
+
+                                        }
+
+                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
+                                    </select>
+
+                                </div>
+
+                                <div class="col-md-4 mt-20">
+
+                                    <label for="form-sub">Loan Amount</label>
+
+                               
+
+                                    <select id="loan-amt" name="amount" class="form-control">
+
+                                        <option>Select your Amount</option>
+
+                                        <?php $__currentLoopData = $amount; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $paise): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?> {
+
+                                        <option value="<?php echo $paise->amount; ?>"><?php echo $paise->amount; ?></option>
+
+                                        }
+
+                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
+                                    </select> 
+
+                                </div>
+
+                                <div class="col-md-4 mt-20">
+
+                                    <label for="form-sub">Place of Loan</label>
+
+                               
+
+                                    <select id="place-loan" name="place_loan" class="form-control">
+
+                                        <option>Select your Place</option>
+
+                                        <?php $__currentLoopData = $placeLoan; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $place): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?> {
+
+                                        <option value="<?php echo $place->place_of_loan; ?>"><?php echo $place->place_of_loan; ?></option>
+
+                                        }
+
+                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
+                                    </select> 
 
                                 </div>
 
@@ -2324,7 +2057,7 @@
 
                                 <div class="col-12 mt-35">
 
-                                    <button type="submit" name="submit" class="theme-btn theme-btn-lg w-100">Submit Now</button>
+                                    <button type="submit" class="theme-btn theme-btn-lg w-100">Submit Now</button>
 
                                 </div>
 
@@ -4046,7 +3779,7 @@ function validateFloatKeyPress(el, evt) {
 
 </script> 
 
-<script src="{{config('app.baseURL')}}\assets\js\chart.min.js?id=b235b564de9c2c1d61d7"></script>
+<script src="<?php echo e(config('app.baseURL')); ?>\assets\js\chart.min.js?id=b235b564de9c2c1d61d7"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
 
@@ -4078,4 +3811,5 @@ function validateFloatKeyPress(el, evt) {
 
     <link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\web\jfinserv\resources\views/msme-loan.blade.php ENDPATH**/ ?>

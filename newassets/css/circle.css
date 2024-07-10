@@ -51,8 +51,9 @@
 .round { position: absolute; left: 40px; top: 45px; width: 410px; height: 410px; border: 2px dotted #0050b2bf; border-radius: 100%; -webkit-animation: rotation 100s infinite linear; }
 
 .dotCircle .itemDot:hover, .dotCircle .itemDot.active { 
-    color: #ffffff; transition: 0.5s;   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0050b2bf +0,0050b2bf+100 */ 
-    background: #0050b2bf ; /* Old browsers */ 
+    color: #ffffff; 
+    transition: 0.5s;   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0050b2bf +0,0050b2bf+100 */ 
+    background: #fff !important; /* Old browsers */ 
     background: -moz-linear-gradient(left, #0050b2bf  0%, #0050b2bf 100%); /* FF3.6-15 */ 
     background: -webkit-linear-gradient(left, #0050b2bf  0%, #0050b2bf 100%); /* Chrome10-25,Safari5.1-6 */ 
     background: linear-gradient(to right, #0050b2bf  0%, #0050b2bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 

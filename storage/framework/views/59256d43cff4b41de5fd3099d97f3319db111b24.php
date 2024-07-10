@@ -1,26 +1,26 @@
-@extends('layouts.app')
-@section('title', "Financial Services in Pune | Lowest Loan Interest in PCMC - Jfinserv")
-@section('description', "Jfinserv provides financial services in Pune engaged in business, personal and MSME financing with lowest loan interest rates in Pune and PCMC and no hidden charges.")
-@section('keywords', "financial services in pune, lowest loan interest in PCMC, business loan with low roi, financial consultants in Pune, Loan services in PCMC, Loan in Pune")
 
-@section('content')
+<?php $__env->startSection('title', "Financial Services in Pune | Lowest Loan Interest in PCMC - Jfinserv"); ?>
+<?php $__env->startSection('description', "Jfinserv provides financial services in Pune engaged in business, personal and MSME financing with lowest loan interest rates in Pune and PCMC and no hidden charges."); ?>
+<?php $__env->startSection('keywords', "financial services in pune, lowest loan interest in PCMC, business loan with low roi, financial consultants in Pune, Loan services in PCMC, Loan in Pune"); ?>
 
-<link rel="stylesheet" href="{{config('app.baseURL')}}/newassets/css/magnific-popup.css">
+<?php $__env->startSection('content'); ?>
+
+<link rel="stylesheet" href="<?php echo e(config('app.baseURL')); ?>/newassets/css/magnific-popup.css">
 <!--Circle CSS-->
-<link rel="stylesheet" href="{{config('app.baseURL')}}/newassets/css/circle.css">
+<link rel="stylesheet" href="<?php echo e(config('app.baseURL')); ?>/newassets/css/circle.css">
 <!--Typography CSS-->
-<link rel="stylesheet" href="{{config('app.baseURL')}}/newassets/css/typography.css">
+<link rel="stylesheet" href="<?php echo e(config('app.baseURL')); ?>/newassets/css/typography.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <!--Owl Stylesheets-->
-<link rel="stylesheet" href="{{config('app.baseURL')}}/assets/owlcarousel/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="{{config('app.baseURL')}}/assets/owlcarousel/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="<?php echo e(config('app.baseURL')); ?>/assets/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="<?php echo e(config('app.baseURL')); ?>/assets/owlcarousel/assets/owl.theme.default.min.css">
 
 <!--javascript-->
-<script src="..{{config('app.baseURL')}}/assets/vendors/jquery.min.js"></script>
-<script src="..{{config('app.baseURL')}}/assets/owlcarousel/owl.carousel.js"></script>
+<script src="..<?php echo e(config('app.baseURL')); ?>/assets/vendors/jquery.min.js"></script>
+<script src="..<?php echo e(config('app.baseURL')); ?>/assets/owlcarousel/owl.carousel.js"></script>
 
 <style>
     body{
@@ -108,7 +108,7 @@
         margin: 5px 10px;
     }
     
-    @media screen and (min-width: 300px) and (max-width: 768px){
+    @media  screen and (min-width: 300px) and (max-width: 768px){
         .cta {
             padding: 15px 10px;
             /* top: 86px; */
@@ -127,7 +127,7 @@
     }
     
 /*Circle*/
-    @media screen and (min-width: 300px) and (max-width: 599px){
+    @media  screen and (min-width: 300px) and (max-width: 599px){
         .round {
             position: absolute;
             left: 25px;
@@ -306,7 +306,7 @@
         <div id="myCarousel" class="carousel slide mb-5" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="{{config('app.baseURL')}}/images/about2.webp" alt="happy family" class="banner-area-2 pt-95">
+                    <img src="<?php echo e(config('app.baseURL')); ?>/images/about2.webp" alt="happy family" class="banner-area-2 pt-95">
                 </div>
             </div>
         </div>
@@ -318,7 +318,7 @@
                         <h1 class="wow fadeInUp mb-0"><span style="color: #4da9ea;" title="Jfinserv Financial Services in Pune">Jfinserv</span> Financial Services</h1>
                         <p class="wow fadeInUp mt-3" data-wow-delay="0.3s"><b>JFinserv Consultant India Private Limited</b> specializes in providing a comprehensive range of financial services in Pune. As a trusted channel partner with multiple banks, we assist clients in securing Home Loans, Project/Construction Loans, Contract Loans, Loans Against Property, Overdraft Facilities, Lease Rental Discounting, and MSME Loans. Our commitment to offering the lowest interest rates, minimal documentation, and flexible tenures ensures a smooth and efficient loan process tailored to meet your financial needs.</p>
                         <p class="wow fadeInUp mt-3" data-wow-delay="0.3s">As trusted financial consultants in Pune, we understand that navigating the complexities of the financial landscape can be daunting. That's why our team of experienced professionals is here to guide you every step of the way. With our comprehensive loan services in PCMC and Pune, you can trust us to help you secure the financing you need to achieve your dreams.</p>
-                        <!--<a href="{{config('app.baseURL')}}/apply-now" data-wow-delay="0.5s" class="wow fadeInUp theme-btn theme-btn-lg mt-50">Move in sooner. Apply today!<i class="material-icons">chevron_right</i></a>-->
+                        <!--<a href="<?php echo e(config('app.baseURL')); ?>/apply-now" data-wow-delay="0.5s" class="wow fadeInUp theme-btn theme-btn-lg mt-50">Move in sooner. Apply today!<i class="material-icons">chevron_right</i></a>-->
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -377,7 +377,7 @@
                 </div>
                 <!--<div class=" col-md-6 col-lg-5 offset-lg-1">
                     <div class="banner-img">
-                        <img class="main-img img-fluid wow fadeInRight" src="{{config('app.baseURL')}}/images/home.jpg" alt="banner-img">
+                        <img class="main-img img-fluid wow fadeInRight" src="<?php echo e(config('app.baseURL')); ?>/images/home.jpg" alt="banner-img">
                         <div class="shapes">
                             <img data-parallax='{"x": 0, "y": 130, "rotateZ":0}' class="shape-1" src="assets/img/banner/shape-1.png" alt="shape">
                             <img data-parallax='{"x": 0, "y": -130, "rotateZ":0}' class="shape-2" src="assets/img/banner/shape-2.png" alt="shape">
@@ -472,7 +472,7 @@
                             <h2 class="mb-3">Fastest, Secure & Easy Loan Process With<br/><span style="color: #0050b2;">Most Referral Benefits</span></h2>
                             <p>Experience the fastest, most secure, and easiest loan process with our streamlined services.<br>Enjoy unparalleled referral benefits while accessing the financial services in Pune you need.</p>
                             <p class="img-img"></p>
-                            <a href="{{config('app.baseURL')}}/apply-now" class="theme-btn mt-20" target="_blank">Get funded fast. Apply now!</a>
+                            <a href="<?php echo e(config('app.baseURL')); ?>/apply-now" class="theme-btn mt-20" target="_blank">Get funded fast. Apply now!</a>
                             <!-- <p>Need some fast cash? Bad cradit history? We dont mind about your past, just the future. Try loan start and feel secure in your future.</p> -->
                         </div>
                     </div>
@@ -513,7 +513,7 @@
                                             data-bs-parent="#accordionExample">
                                             <div class="faq-body">
                                                 <p>We have unique earning opportunity for individuals through referral program  which offers payout not only for your direct referrals but also pays for your friend's referral. We have option for weekly and monthly release of payouts with one of the highest payout structure in the market.</p>
-                                            <a href="{{config('app.baseURL')}}/referral-program" class="wow fadeInUp theme-btn mt-5" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Learn More<i class="material-icons">chevron_right</i></a>
+                                            <a href="<?php echo e(config('app.baseURL')); ?>/referral-program" class="wow fadeInUp theme-btn mt-5" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Learn More<i class="material-icons">chevron_right</i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -531,7 +531,7 @@
                                             data-bs-parent="#accordionExample">
                                             <div class="faq-body">
                                                 <p>Jfinserv Referral Program for Business Associates helps you to accelerate the growth of your business and earnings. Whether you are a Financial Expert in Pune & PCMC, Chartered Accountant, Tax Consultant, Insurance Agent, Loan Distribution Agency in Pune, Real Estate Broker or into some other businesses, let's work together for mutual benefit at zero investment.</p>
-                                                <a href="{{config('app.baseURL')}}/contact" class="wow fadeInUp theme-btn mt-5" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Connect Now<i class="material-icons">chevron_right</i></a>
+                                                <a href="<?php echo e(config('app.baseURL')); ?>/contact" class="wow fadeInUp theme-btn mt-5" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Connect Now<i class="material-icons">chevron_right</i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -547,27 +547,27 @@
                         <div class="dotCircle">
                             <span class="itemDot active itemDot1" data-tab="1">
                                 <!-- <i class="fa fa-user"></i> -->
-                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images/unlimit-earn.png" alt="unlimited earning">
+                                <img class="img-fluid top-img1 img-new" src="<?php echo e(config('app.baseURL')); ?>/images/unlimit-earn.png" alt="unlimited earning">
                                 <span class="forActive"></span>
                             </span>
                             <span class="itemDot itemDot2" data-tab="2">
                                 <!-- <i class="ion-ios-chatboxes-outline"></i> -->
-                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images/bank.png" alt="Direct Transfer">
+                                <img class="img-fluid top-img1 img-new" src="<?php echo e(config('app.baseURL')); ?>/images/bank.png" alt="Direct Transfer">
                                 <span class="forActive"></span>
                             </span>
                             <span class="itemDot itemDot3" data-tab="3">
                                 <!-- <i class="ion-ios-person-outline"></i> -->
-                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images/simple-process.png" alt="simple process">
+                                <img class="img-fluid top-img1 img-new" src="<?php echo e(config('app.baseURL')); ?>/images/simple-process.png" alt="simple process">
                                 <span class="forActive"></span>
                             </span>
                             <span class="itemDot itemDot4" data-tab="4">
                                 <!-- <i class="ion-ios-pricetags-outline"></i> -->
-                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images/transparency.png" alt="transparency">
+                                <img class="img-fluid top-img1 img-new" src="<?php echo e(config('app.baseURL')); ?>/images/transparency.png" alt="transparency">
                                 <span class="forActive"></span>
                             </span>
                             <span class="itemDot itemDot5" data-tab="5">
                                 <!-- <i class="ion-ios-upload-outline"></i> -->
-                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images/gift.png" alt="Rewards">
+                                <img class="img-fluid top-img1 img-new" src="<?php echo e(config('app.baseURL')); ?>/images/gift.png" alt="Rewards">
                                 <span class="forActive"></span>
                             </span>
                         </div>
@@ -626,7 +626,7 @@
                 <div class="col-xl-4 col-md-8 box">
                     <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="icon-bg-1">
-                            <img src="{{asset('images/one.png')}}" alt="icon" class="icons">
+                            <img src="<?php echo e(asset('images/one.png')); ?>" alt="icon" class="icons">
                         </div>
                         <h5>Attractive Interest Rate</h5>
                         <p>Repo rate-linked rates adjust borrowing costs based on central bank policy.</p>
@@ -636,7 +636,7 @@
                 <div class="col-xl-4 col-md-8 box">
                     <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="icon-bg-2">
-                            <img src="{{asset('images/two.png')}}" alt="icon" class="icons">
+                            <img src="<?php echo e(asset('images/two.png')); ?>" alt="icon" class="icons">
                         </div>
                         <h5>Enjoy Low EMI</h5>
                         <p>Enjoy low EMIs with longer tenure for better monthly budgeting.</p>
@@ -646,7 +646,7 @@
                 <div class="col-xl-4 col-md-8 box">
                     <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="icon-bg-3">
-                            <img src="{{asset('images/three.png')}}" alt="icon" class="icons">
+                            <img src="<?php echo e(asset('images/three.png')); ?>" alt="icon" class="icons">
                         </div>
                         <h5>Step-Up Loan Offer</h5>
                         <p>Young salaried professionals can avail higher eligibility on Home Loans.</p>
@@ -656,7 +656,7 @@
                 <div class="col-xl-4 col-md-8 box d-flex">
                     <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.9s" style="width:100%;">
                         <div class="icon-bg-4">
-                            <img src="{{asset('images/four.png')}}" alt="icon" class="icons">
+                            <img src="<?php echo e(asset('images/four.png')); ?>" alt="icon" class="icons">
                         </div>
                         <h5>Digital Sanction</h5>
                         <p>Obtain online approval with just 5 simple steps for fast access to funds.</p>
@@ -666,7 +666,7 @@
                 <div class="col-xl-4 col-md-8 box">
                     <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.9s">
                         <div class="icon-bg-4">
-                            <img src="{{asset('images/five.png')}}" alt="icon" class="icons">
+                            <img src="<?php echo e(asset('images/five.png')); ?>" alt="icon" class="icons">
                         </div>
                         <h5>PMAY</h5>
                         <p>Get subsidy benefits of up to Rs. 2.67* Lakhs under credit linked subsidy scheme from Govt. of India.</p>
@@ -676,7 +676,7 @@
                 <div class="col-xl-4 col-md-8 box">
                     <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.9s">
                         <div class="icon-bg-1">
-                            <img src="{{asset('images/six.png')}}" alt="icon" class="icons">
+                            <img src="<?php echo e(asset('images/six.png')); ?>" alt="icon" class="icons">
                         </div>
                         <h5>Supported By Experts</h5>
                         <p>We can put you in touch with one of our expert in your area, who are ready to support you through your home loan journey.</p>
@@ -700,67 +700,67 @@
                 <div class="col-md-12 mx-auto">
                     <div class="row">
                         <!-- <img src="https://www.iservefinancial.com/public/images/iservepartner/iserve-partners-new.png" style="width:100%;"> -->
-                        <!-- @foreach($bank as $banks)
+                        <!-- <?php $__currentLoopData = $bank; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $banks): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <div class="bank col-md-3 col-sm-3 partners">
-                                <img src="{{config('app.baseURL')}}/storage/app/{{$banks->bank_image}}" alt="partners" class="bank_img">
+                                <img src="<?php echo e(config('app.baseURL')); ?>/storage/app/<?php echo e($banks->bank_image); ?>" alt="partners" class="bank_img">
                             </div>
-                        @endforeach -->
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> -->
 
                         <div class="large-12 columns">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/ab.jpg" alt="Aditya Birla" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/ab.jpg" alt="Aditya Birla" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/ar.jpg" alt="Anandrathi" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/ar.jpg" alt="Anandrathi" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/arks.jpg" alt="ARKS Fincap" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/arks.jpg" alt="ARKS Fincap" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/bom.jpg" alt="Bank of Maharashtra" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/bom.jpg" alt="Bank of Maharashtra" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/cbi.jpg" alt="Central Bank of India" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/cbi.jpg" alt="Central Bank of India" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/chola.jpg" alt="Chola" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/chola.jpg" alt="Chola" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/hdb.jpg" alt="HDB Financial Services" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/hdb.jpg" alt="HDB Financial Services" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/ib.jpg" alt="Indiabulls" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/ib.jpg" alt="Indiabulls" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/indian.png" alt="Indian Bank" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/indian.png" alt="Indian Bank" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/kotak.jpg" alt="Kotak" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/kotak.jpg" alt="Kotak" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/pnb.jpg" alt="PNB" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/pnb.jpg" alt="PNB" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/rbl.jpg" alt="RBL" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/rbl.jpg" alt="RBL" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/sc.jpg" alt="Standard Chartered" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/sc.jpg" alt="Standard Chartered" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/ujjivan.jpg" alt="Ujjivan Small Finance" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/ujjivan.jpg" alt="Ujjivan Small Finance" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/union.jpg" alt="Union Bank" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/union.jpg" alt="Union Bank" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/yb.jpg" alt="Yes Bank" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/yb.jpg" alt="Yes Bank" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/boi.png" alt="Yes Bank" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/boi.png" alt="Yes Bank" class="bank_img">
                                 </div>
                                 <div class="item">
-                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/uco.jpg" alt="Yes Bank" class="bank_img">
+                                  <img src="<?php echo e(config('app.baseURL')); ?>/images/bnk_logos/uco.jpg" alt="Yes Bank" class="bank_img">
                                 </div>
                             </div>
                           
@@ -970,34 +970,34 @@
                 <div class="col-lg-12 ">
                     <div class="blog-post-widget">
                         <div class="row gy-4 ">
-                            @foreach($get_properties as $get_property)
+                            <?php $__currentLoopData = $get_properties; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $get_property): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <div class="col-md-4">
                                 <div class="blog-widget-2 wow fadeInUp" data-wow-delay="0.1s" style="height: 100%">
-                                    <a href="{{config('app.baseURL')}}/property/{{$get_property->property_id}}">
+                                    <a href="<?php echo e(config('app.baseURL')); ?>/property/<?php echo e($get_property->property_id); ?>">
                                         <div class="blog-img">
-                                            @if($get_property->propertyimages!='[]')
-                                            @php
+                                            <?php if($get_property->propertyimages!='[]'): ?>
+                                            <?php
                                                 $img=$get_property->propertyimages;
                                                 $property_img=$img->first();
-                                            @endphp
-                                            <img src="{{config('app.baseURL')}}/storage/app/{{$property_img->property_image}}" alt="blog-img" style="height:200px;object-fit:cover;">
-                                            @endif
-                                            @if($get_property->property_type==1)
+                                            ?>
+                                            <img src="<?php echo e(config('app.baseURL')); ?>/storage/app/<?php echo e($property_img->property_image); ?>" alt="blog-img" style="height:200px;object-fit:cover;">
+                                            <?php endif; ?>
+                                            <?php if($get_property->property_type==1): ?>
                                             <div class="catagory bg_primary">New Flat</div>
-                                            @elseif($get_property->property_type==2)
+                                            <?php elseif($get_property->property_type==2): ?>
                                             <div class="catagory bg_primary">Resale Flat</div>
-                                            @elseif($get_property->property_type==3)
+                                            <?php elseif($get_property->property_type==3): ?>
                                             <div class="catagory bg_primary">Lands</div>
-                                            @else
+                                            <?php else: ?>
                                             <div class="catagory bg_primary">Commercial}</div>
-                                            @endif
+                                            <?php endif; ?>
                                         </div>
                                     </a>
                                     <div class="blog-content">
-                                        <h4  style="margin-bottom: 0px !important;"><a href="{{config('app.baseURL')}}/property/{{$get_property->property_id}}">{{$get_property->property_name}}</a>
+                                        <h4  style="margin-bottom: 0px !important;"><a href="<?php echo e(config('app.baseURL')); ?>/property/<?php echo e($get_property->property_id); ?>"><?php echo e($get_property->property_name); ?></a>
                                         </h4>
-                                        <span style="margin-bottom: 10px;">by {{$get_property->builder_name}}</span>
-                                        <h6 style="font-weight: 600;margin-top: 10px;"><a href="{{config('app.baseURL')}}/property/{{$get_property->property_id}}">{{$get_property->property_size}}</a>
+                                        <span style="margin-bottom: 10px;">by <?php echo e($get_property->builder_name); ?></span>
+                                        <h6 style="font-weight: 600;margin-top: 10px;"><a href="<?php echo e(config('app.baseURL')); ?>/property/<?php echo e($get_property->property_id); ?>"><?php echo e($get_property->property_size); ?></a>
                                         </h6>
                                         <?php
                                             $string = strip_tags($get_property->property_description);
@@ -1007,26 +1007,27 @@
                                                 $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
                                             }
                                         ?>
-                                        @if (strlen($get_property->property_description) > 50)
+                                        <?php if(strlen($get_property->property_description) > 50): ?>
                                           <p><?php echo $string ?>..</p>
-                                        @else
+                                        <?php else: ?>
                                           <p><?php echo $get_property->property_description ?></p>
-                                        @endif
+                                        <?php endif; ?>
                                         <div class="post-info">
-                                           ₹ {{$get_property->from_property_price}} - ₹ {{$get_property->to_property_price}}
+                                           ₹ <?php echo e($get_property->from_property_price); ?> - ₹ <?php echo e($get_property->to_property_price); ?>
+
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <button><i class="fa fa-telephone"></i>{{$get_property->contact_number}}</button>
+                                                <button><i class="fa fa-telephone"></i><?php echo e($get_property->contact_number); ?></button>
                                             </div>
                                             <div class="col-md-6">
-                                                <button><i class="fa fa-mail"></i>{{$get_property->contact_number}}</button>
+                                                <button><i class="fa fa-mail"></i><?php echo e($get_property->contact_number); ?></button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            @endforeach
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </div>
                     </div>
                 </div>
@@ -1060,7 +1061,7 @@
                             </div>
                             <div class="col-md-3 text-center text-md-end">
                                 <div class="cta-content   text-md-end mt-3 mt-md-0">
-                                    <a href="{{config('app.baseURL')}}/contact" class="theme-btn theme-btn-alt wow fadeInLeft m-0">Contact Us</a>
+                                    <a href="<?php echo e(config('app.baseURL')); ?>/contact" class="theme-btn theme-btn-alt wow fadeInLeft m-0">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -1071,10 +1072,11 @@
     </section>
 </main>
     
-<script src="{{config('app.baseURL')}}/newassets/js/owl.carousel.min.js"></script>
-<script src="{{config('app.baseURL')}}/newassets/js/circle.js"></script>
+<script src="<?php echo e(config('app.baseURL')); ?>/newassets/js/owl.carousel.min.js"></script>
+<script src="<?php echo e(config('app.baseURL')); ?>/newassets/js/circle.js"></script>
 
 <!--vendors-->
-<script src="{{config('app.baseURL')}}/assets/vendors/highlight.js"></script>
-<script src="{{config('app.baseURL')}}/assets/js/app.js"></script>
-@endsection
+<script src="<?php echo e(config('app.baseURL')); ?>/assets/vendors/highlight.js"></script>
+<script src="<?php echo e(config('app.baseURL')); ?>/assets/js/app.js"></script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\jfinserv\resources\views/index.blade.php ENDPATH**/ ?>

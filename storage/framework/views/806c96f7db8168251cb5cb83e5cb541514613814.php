@@ -1,14 +1,14 @@
-@extends('layouts.app')
-
-@section('title', "Best Home Loan Rates in Pune | Home Loan in Pune - Jfinserv")
-
-@section('description', "Unlock your dream home with JFInserv's personalized best home loan rates in pune. Your pathway to home loan in pune and PCMC!")
-
-@section('keywords', "best home loan rates in pune, home loan in pune, Home Loans in Pune, Housing Finance in Pune, Homeownership in PCMC, Property Loans in Pune, Real Estate Financing in Pune, Housing Loans in Pune")
 
 
+<?php $__env->startSection('title', "Best Home Loan Rates in Pune | Home Loan in Pune - Jfinserv"); ?>
 
-@section('content')
+<?php $__env->startSection('description', "Unlock your dream home with JFInserv's personalized best home loan rates in pune. Your pathway to home loan in pune and PCMC!"); ?>
+
+<?php $__env->startSection('keywords', "best home loan rates in pune, home loan in pune, Home Loans in Pune, Housing Finance in Pune, Homeownership in PCMC, Property Loans in Pune, Real Estate Financing in Pune, Housing Loans in Pune"); ?>
+
+
+
+<?php $__env->startSection('content'); ?>
 
 <style type="text/css">
 
@@ -36,7 +36,7 @@
 
 
 
-    @media only screen and (min-width: 800px) and (max-width: 1700px){
+    @media  only screen and (min-width: 800px) and (max-width: 1700px){
 
         canvas#simple-pie-chart{
 
@@ -174,7 +174,7 @@
 
   
 
-    @media only screen and (min-width: 800px){
+    @media  only screen and (min-width: 800px){
 
       .bar-chart-padding{
 
@@ -188,7 +188,7 @@
 
 
 
-    @media only screen and (max-width: 767px){ 
+    @media  only screen and (max-width: 767px){ 
 
         canvas#simple-pie-chart{
 
@@ -604,7 +604,7 @@
 
 /*header*/
 
-    @media screen and (min-width: 300px) and (max-width: 768px){
+    @media  screen and (min-width: 300px) and (max-width: 768px){
 
         .img-fluid, .icon_mail_alt{
 
@@ -674,7 +674,7 @@
 
     
 
-    @media screen and (min-width: 801px) and (max-width: 2000px){
+    @media  screen and (min-width: 801px) and (max-width: 2000px){
 
         .icon_clock_alt{
 
@@ -688,7 +688,7 @@
 
     /*CSS for mobile view*/
 
-    @media screen and (min-width: 300px) and (max-width: 400px){
+    @media  screen and (min-width: 300px) and (max-width: 400px){
 
         .d-lg-block{
 
@@ -734,7 +734,7 @@
 
    
 
-    @media screen and (min-width: 401px) and (max-width: 500px){
+    @media  screen and (min-width: 401px) and (max-width: 500px){
 
         .d-lg-block{
 
@@ -780,7 +780,7 @@
 
 
 
-    @media screen and (min-width: 501px) and (max-width: 700px){
+    @media  screen and (min-width: 501px) and (max-width: 700px){
 
         .d-lg-block{
 
@@ -826,7 +826,7 @@
 
 
 
-    @media screen and (min-width: 701px) and (max-width: 768px){
+    @media  screen and (min-width: 701px) and (max-width: 768px){
 
         .d-lg-block{
 
@@ -1456,7 +1456,7 @@
 
                     <div class="card hover-box-shadow">
 
-                        <img class="card-img-top hover-fade-out img-img" src="{{config('app.baseURL')}}/images/service/cir.jpg" alt="Competitive Interest Rates:">
+                        <img class="card-img-top hover-fade-out img-img" src="<?php echo e(config('app.baseURL')); ?>/images/service/cir.jpg" alt="Competitive Interest Rates:">
 
                         <div class="card-body">
 
@@ -1476,7 +1476,7 @@
 
                     <div class="card hover-box-shadow">
 
-                        <img class="card-img-top hover-fade-out img-img" src="{{config('app.baseURL')}}/images/service/fro.jpg" alt="Flexible Repayment Options">
+                        <img class="card-img-top hover-fade-out img-img" src="<?php echo e(config('app.baseURL')); ?>/images/service/fro.jpg" alt="Flexible Repayment Options">
 
                         <div class="card-body">
 
@@ -1496,7 +1496,7 @@
 
                     <div class="card hover-box-shadow">
 
-                        <img class="card-img-top hover-fade-out img-img" src="{{config('app.baseURL')}}/images/service/sap.jpg" alt="Simple Application Process">
+                        <img class="card-img-top hover-fade-out img-img" src="<?php echo e(config('app.baseURL')); ?>/images/service/sap.jpg" alt="Simple Application Process">
 
                         <div class="card-body">
 
@@ -1516,7 +1516,7 @@
 
                     <div class="card hover-box-shadow">
 
-                        <img class="card-img-top hover-fade-out img-img" src="{{config('app.baseURL')}}/images/service/tc.jpg" alt="Transparent Terms &amp; Conditions">
+                        <img class="card-img-top hover-fade-out img-img" src="<?php echo e(config('app.baseURL')); ?>/images/service/tc.jpg" alt="Transparent Terms &amp; Conditions">
 
                         <div class="card-body">
 
@@ -1536,7 +1536,7 @@
 
                     <div class="card hover-box-shadow">
 
-                        <img class="card-img-top hover-fade-out img-img" src="{{config('app.baseURL')}}/images/service/qad.jpg" alt="Quick Approval and Disbursal">
+                        <img class="card-img-top hover-fade-out img-img" src="<?php echo e(config('app.baseURL')); ?>/images/service/qad.jpg" alt="Quick Approval and Disbursal">
 
                         <div class="card-body">
 
@@ -1556,7 +1556,7 @@
 
                     <div class="card hover-box-shadow">
 
-                        <img class="card-img-top hover-fade-out img-img" src="{{config('app.baseURL')}}/images/service/zfc.jpg" alt="No Foreclosure Charges">
+                        <img class="card-img-top hover-fade-out img-img" src="<?php echo e(config('app.baseURL')); ?>/images/service/zfc.jpg" alt="No Foreclosure Charges">
 
                         <div class="card-body">
 
@@ -1614,9 +1614,9 @@
 
                                     <div class="card card-body bg_disable text-left text-dark">
 
-                                        <form method="post" action="{{config('app.baseURL')}}/loans/loan-enquiry/3" enctype='multipart/form-data'>
+                                        <form method="post" action="<?php echo e(config('app.baseURL')); ?>/loans/loan-enquiry/3" enctype='multipart/form-data'>
 
-                                            <input type="hidden" name="_token" value="{{csrf_token()}}">
+                                            <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
 
                                             <label for="LoanRange" class="finance-details">Loan Amount</label>
 
@@ -1682,7 +1682,7 @@
 
                                                 <input type="hidden" name="monthly_emi" class="monthly_emi" value="">
 
-                                                <a href="{{config('app.baseURL')}}/apply-now" class="theme-btn theme-btn-lg mt-40" target="_blank">Apply Now <i class="arrow_right"></i></a>
+                                                <a href="<?php echo e(config('app.baseURL')); ?>/apply-now" class="theme-btn theme-btn-lg mt-40" target="_blank">Apply Now <i class="arrow_right"></i></a>
 
                                             </div>
 
@@ -1756,7 +1756,7 @@
 
             
 
-            <form action="{{config('app.baseURL')}}/apply-now">
+            <form action="<?php echo e(config('app.baseURL')); ?>/apply-now">
 
                 <div class="row">
 
@@ -1770,9 +1770,9 @@
 
                                     <div class="icon">
 
-                                        <img src="{{config('app.baseURL')}}/assets/img/apply-loan/icon-1.1.png" alt="icon-1">
+                                        <img src="<?php echo e(config('app.baseURL')); ?>/assets/img/apply-loan/icon-1.1.png" alt="icon-1">
 
-                                        <img src="{{config('app.baseURL')}}/assets/img/apply-loan/icon-1.2.png" alt="icon-1.2">
+                                        <img src="<?php echo e(config('app.baseURL')); ?>/assets/img/apply-loan/icon-1.2.png" alt="icon-1.2">
 
                                     </div>
 
@@ -1794,9 +1794,9 @@
 
                                     <div class="icon">
 
-                                        <img src="{{config('app.baseURL')}}/assets/img/apply-loan/icon-2.1.png" alt="icon-2">
+                                        <img src="<?php echo e(config('app.baseURL')); ?>/assets/img/apply-loan/icon-2.1.png" alt="icon-2">
 
-                                        <img src="{{config('app.baseURL')}}/assets/img/apply-loan/icon-2.2.png" alt="icon-2.2">
+                                        <img src="<?php echo e(config('app.baseURL')); ?>/assets/img/apply-loan/icon-2.2.png" alt="icon-2.2">
 
                                     </div>
 
@@ -1836,9 +1836,9 @@
 
                                     <div class="icon">
 
-                                        <img src="{{config('app.baseURL')}}/assets/img/apply-loan/icon-3.1.png" alt="icon-3">
+                                        <img src="<?php echo e(config('app.baseURL')); ?>/assets/img/apply-loan/icon-3.1.png" alt="icon-3">
 
-                                        <img src="{{config('app.baseURL')}}/assets/img/apply-loan/icon-3.2.png" alt="icon-3.2">
+                                        <img src="<?php echo e(config('app.baseURL')); ?>/assets/img/apply-loan/icon-3.2.png" alt="icon-3.2">
 
                                     </div>
 
@@ -1874,7 +1874,7 @@
 
                                 <div class="icon">
 
-                                    <img class="img=fluid" src="{{config('app.baseURL')}}/assets/img/steps/sheild.png" alt="sheild">
+                                    <img class="img=fluid" src="<?php echo e(config('app.baseURL')); ?>/assets/img/steps/sheild.png" alt="sheild">
 
                                 </div>
 
@@ -2204,9 +2204,10 @@
 
                     <div class="contact-form-widget">
 
-                        <form action="{{config('app.baseURL')}}/thankyou" method="post">
+                        <form action="<?php echo e(config('app.baseURL')); ?>/thankyou" method="post">
 
-                            {{csrf_field()}}
+                            <?php echo e(csrf_field()); ?>
+
 
                             <div class="row fadeInUp">
 
@@ -2236,13 +2237,13 @@
 
                                         <option value="" selected disabled hidden>Select Required Amount</option>
 
-                                        @foreach ($amount as $paise) {
+                                        <?php $__currentLoopData = $amount; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $paise): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?> {
 
                                         <option value="<?php echo $paise->id; ?>"><?php echo $paise->amount; ?></option>
 
                                         }
 
-                                        @endforeach
+                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
                                     </select>
 
@@ -2256,13 +2257,13 @@
 
                                         <option value="" selected disabled hidden>Select Location</option>
 
-                                        @foreach ($placeLoan as $place) {
+                                        <?php $__currentLoopData = $placeLoan; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $place): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?> {
 
                                         <option value="<?php echo $place->id; ?>"><?php echo $place->place_of_loan; ?></option>
 
                                         }
 
-                                        @endforeach
+                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
                                     </select>
 
@@ -4046,7 +4047,7 @@ function validateFloatKeyPress(el, evt) {
 
 </script> 
 
-<script src="{{config('app.baseURL')}}\assets\js\chart.min.js?id=b235b564de9c2c1d61d7"></script>
+<script src="<?php echo e(config('app.baseURL')); ?>\assets\js\chart.min.js?id=b235b564de9c2c1d61d7"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
 
@@ -4078,4 +4079,5 @@ function validateFloatKeyPress(el, evt) {
 
     <link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\web\jfinserv\resources\views/home-loans.blade.php ENDPATH**/ ?>

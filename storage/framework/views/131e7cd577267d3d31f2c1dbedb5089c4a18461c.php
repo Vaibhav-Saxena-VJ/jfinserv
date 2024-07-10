@@ -1,14 +1,14 @@
-@extends('layouts.app')
-
-@section('title', "Financial Services Contact | Financial Consultant - Jfinserv")
-
-@section('description', "Get a financial services contact and get connected with financial consultant. Finance Home Loan Pune offers tailored solutions to help in business growth. Apply today")
-
-@section('keywords', "Financial Services Contact, Financial Consultant")
 
 
+<?php $__env->startSection('title', "Financial Services Contact | Financial Consultant - Jfinserv"); ?>
 
-@section('content')
+<?php $__env->startSection('description', "Get a financial services contact and get connected with financial consultant. Finance Home Loan Pune offers tailored solutions to help in business growth. Apply today"); ?>
+
+<?php $__env->startSection('keywords', "Financial Services Contact, Financial Consultant"); ?>
+
+
+
+<?php $__env->startSection('content'); ?>
 
 
 
@@ -84,7 +84,7 @@
 
 /*header*/
 
-@media screen and (min-width: 300px) and (max-width: 768px){
+@media  screen and (min-width: 300px) and (max-width: 768px){
 
 .img-fluid, .icon_mail_alt{
 
@@ -100,7 +100,7 @@
 
 }
 
-@media screen and (min-width: 801px) and (max-width: 2000px){
+@media  screen and (min-width: 801px) and (max-width: 2000px){
 
 
 
@@ -114,7 +114,7 @@
 
 /*CSS for Mobile view*/
 
-@media screen and (min-width: 300px) and (max-width: 400px){
+@media  screen and (min-width: 300px) and (max-width: 400px){
 
 .short-title{
 
@@ -152,7 +152,7 @@
 
 }
 
-@media screen and (min-width: 401px) and (max-width: 800px){
+@media  screen and (min-width: 401px) and (max-width: 800px){
 
 .pt-140 {
 
@@ -170,7 +170,7 @@
 
         <!-- BreadCrumb start -->
 
-        <section class="banner-area-2 pt-50" style="background-image: url({{config('app.baseURL')}}/images/contact.jpg);">
+        <section class="banner-area-2 pt-50" style="background-image: url(<?php echo e(config('app.baseURL')); ?>/images/contact.jpg);">
 
             <div class="container">
 
@@ -232,7 +232,7 @@
 
 
 
-                                        <img src="{{asset('images\call.png')}}" alt="call icon">
+                                        <img src="<?php echo e(asset('images\call.png')); ?>" alt="call icon">
 
                                     </div>
 
@@ -256,7 +256,7 @@
 
 
 
-                                        <img src="{{asset('images\mail.png')}}" alt="mail icon">
+                                        <img src="<?php echo e(asset('images\mail.png')); ?>" alt="mail icon">
 
                                     </div>
 
@@ -330,9 +330,10 @@
 
                         <div class="contact-form-widget">
 
-                            <form action="{{config('http://127.0.0.1:8000')}}/contact" method="post">
+                            <form action="<?php echo e(config('http://127.0.0.1:8000')); ?>/contact" method="post">
 
-                                 {{csrf_field()}}
+                                 <?php echo e(csrf_field()); ?>
+
 
                                 <div class="row">
 
@@ -568,7 +569,7 @@
 
                                     <div class="cta-content   text-md-end mt-3 mt-md-0">
 
-                                        <a href="{{config('app.baseURL')}}/Auth/registeruser"
+                                        <a href="<?php echo e(config('app.baseURL')); ?>/Auth/registeruser"
 
                                             class="theme-btn theme-btn-alt wow fadeInLeft m-0">Apply Now</a>
 
@@ -604,4 +605,5 @@
 
 
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\web\jfinserv\resources\views/contact.blade.php ENDPATH**/ ?>
