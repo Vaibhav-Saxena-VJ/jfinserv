@@ -6,23 +6,23 @@
 @section('content')
 
 <link rel="stylesheet" href="{{config('app.baseURL')}}/newassets/css/magnific-popup.css">
-<!-- Circle CSS-->
+<!--Circle CSS-->
 <link rel="stylesheet" href="{{config('app.baseURL')}}/newassets/css/circle.css">
-<!-- Typography CSS -->
+<!--Typography CSS-->
 <link rel="stylesheet" href="{{config('app.baseURL')}}/newassets/css/typography.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<!-- Owl Stylesheets -->
+<!--Owl Stylesheets-->
 <link rel="stylesheet" href="{{config('app.baseURL')}}/assets/owlcarousel/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="{{config('app.baseURL')}}/assets/owlcarousel/assets/owl.theme.default.min.css">
 
-<!-- javascript -->
+<!--javascript-->
 <script src="..{{config('app.baseURL')}}/assets/vendors/jquery.min.js"></script>
 <script src="..{{config('app.baseURL')}}/assets/owlcarousel/owl.carousel.js"></script>
 
-<style type="text/css">
+<style>
     body{
         overflow-x: hidden !important;
     }
@@ -37,12 +37,12 @@
     }
 
     .img-new{
-        width: 45px !important;
+        width: 80% !important;
         padding-bottom:10px;
     }
 
     .dotCircle .itemDot {
-        background: #d83733;
+        background: #fff;
     }
 
     .title-box span {
@@ -276,7 +276,7 @@
     
     .carousel-inner img{
         width: 100%; 
-        height: 650px; 
+        height: 728px; 
         object-fit: cover; 
         object-position: center;
     }
@@ -304,17 +304,9 @@
 <main>
     <section class="banner-area-2 pt-5 pb-40" id="banner_animation" style="background-size: auto; background-position: top left;">
         <div id="myCarousel" class="carousel slide mb-5" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-        
-            <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="{{config('app.baseURL')}}/images/about2.jpg" alt="happy family" class="banner-area-2 pt-95">
+                    <img src="{{config('app.baseURL')}}/images/about2.webp" alt="happy family" class="banner-area-2 pt-95">
                 </div>
             </div>
         </div>
@@ -357,11 +349,11 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="/contract-loan">
+                    <a href="/loan-against-property">
                         <div class="feature-box mb-4 text-center">
                             <p class="mb-3"><i class="fa-solid fa-house-laptop fa-3x"></i></p>
-                            <h5>Contract Loan</h5>
-                            <p>Secure a contract loan in Pune quickly and hassle-free with our streamlined process and competitive rates. Get the funding you need with ease.</p>
+                            <h5>Loan Against Property</h5>
+                            <p>Secure a loan against property in Pune quickly and hassle-free with our streamlined process and competitive rates. Get the funding you need with ease.</p>
                         </div>
                     </a>
                 </div>
@@ -385,7 +377,7 @@
                 </div>
                 <!--<div class=" col-md-6 col-lg-5 offset-lg-1">
                     <div class="banner-img">
-                        <img class="main-img img-fluid wow fadeInRight" src="{{config('app.baseURL')}}/images\home.jpg" alt="banner-img">
+                        <img class="main-img img-fluid wow fadeInRight" src="{{config('app.baseURL')}}/images/home.jpg" alt="banner-img">
                         <div class="shapes">
                             <img data-parallax='{"x": 0, "y": 130, "rotateZ":0}' class="shape-1" src="assets/img/banner/shape-1.png" alt="shape">
                             <img data-parallax='{"x": 0, "y": -130, "rotateZ":0}' class="shape-2" src="assets/img/banner/shape-2.png" alt="shape">
@@ -399,7 +391,7 @@
             </div>
         </div>
     </section>
-    <!-- banner section -->
+    <!--banner section-->
         
     <section class="feature-area-2 pt-80 pb-80" id="feature">
         <div class="container">
@@ -439,7 +431,7 @@
                                 <img src="assets/img/feature/icon-6.png" alt="">
                             </div>
                             <div class="feature-content">
-                                <p>FROM 6.40%</p>
+                                <p>HOME LOAN @ 8.40%</p>
                                 <h6>Lowest Interest Rate</h6>
                             </div>
                         </div>
@@ -457,7 +449,7 @@
                                 <img src="assets/img/feature/icon-7.png" alt="">
                             </div>
                             <div class="feature-content">
-                                <p>7 DAYS PROCESS</p>
+                                <p>7 WORKING DAYS</p>
                                 <h6>Fast & Easier Process</h6>
                             </div>
                         </div>
@@ -467,14 +459,14 @@
 
             <div class="fast-e-loan pt-90">
                 <div class="row gy-xl-0 gy-4">
-                    <!-- <div class="col-md-3">
+                    <!--<div class="col-md-3">
                         <div class="apply-topics">
                             <ul>
                                 <li><i class="fa-solid fa-square-check"></i><b>No Limit Of Loan Amount</b></li>
                                 <li><i class="fa-solid fa-square-check"></i><b>Fastest Disbursal Procedure</b></li>
                             </ul>
                         </div>
-                    </div> -->
+                    </div>-->
                     <div class="col-md-12">
                         <div class="section-title wow fadeInUp">
                             <h2 class="mb-3">Fastest, Secure & Easy Loan Process With<br/><span style="color: #0050b2;">Most Referral Benefits</span></h2>
@@ -555,27 +547,27 @@
                         <div class="dotCircle">
                             <span class="itemDot active itemDot1" data-tab="1">
                                 <!-- <i class="fa fa-user"></i> -->
-                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images\image1.png" alt="image">
+                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images/unlimit-earn.png" alt="unlimited earning">
                                 <span class="forActive"></span>
                             </span>
                             <span class="itemDot itemDot2" data-tab="2">
                                 <!-- <i class="ion-ios-chatboxes-outline"></i> -->
-                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images\image2.png" alt="image">
+                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images/bank.png" alt="Direct Transfer">
                                 <span class="forActive"></span>
                             </span>
                             <span class="itemDot itemDot3" data-tab="3">
                                 <!-- <i class="ion-ios-person-outline"></i> -->
-                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images\image3.png" alt="image">
+                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images/simple-process.png" alt="simple process">
                                 <span class="forActive"></span>
                             </span>
                             <span class="itemDot itemDot4" data-tab="4">
                                 <!-- <i class="ion-ios-pricetags-outline"></i> -->
-                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images\image4.png" alt="image">
+                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images/transparency.png" alt="transparency">
                                 <span class="forActive"></span>
                             </span>
                             <span class="itemDot itemDot5" data-tab="5">
                                 <!-- <i class="ion-ios-upload-outline"></i> -->
-                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images\image5.png" alt="image">
+                                <img class="img-fluid top-img1 img-new" src="{{config('app.baseURL')}}/images/gift.png" alt="Rewards">
                                 <span class="forActive"></span>
                             </span>
                         </div>
@@ -634,7 +626,7 @@
                 <div class="col-xl-4 col-md-8 box">
                     <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="icon-bg-1">
-                            <img src="{{asset('images\one.png')}}" alt="icon" class="icons">
+                            <img src="{{asset('images/one.png')}}" alt="icon" class="icons">
                         </div>
                         <h5>Attractive Interest Rate</h5>
                         <p>Repo rate-linked rates adjust borrowing costs based on central bank policy.</p>
@@ -644,7 +636,7 @@
                 <div class="col-xl-4 col-md-8 box">
                     <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="icon-bg-2">
-                            <img src="{{asset('images\two.png')}}" alt="icon" class="icons">
+                            <img src="{{asset('images/two.png')}}" alt="icon" class="icons">
                         </div>
                         <h5>Enjoy Low EMI</h5>
                         <p>Enjoy low EMIs with longer tenure for better monthly budgeting.</p>
@@ -654,7 +646,7 @@
                 <div class="col-xl-4 col-md-8 box">
                     <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="icon-bg-3">
-                            <img src="{{asset('images\three.png')}}" alt="icon" class="icons">
+                            <img src="{{asset('images/three.png')}}" alt="icon" class="icons">
                         </div>
                         <h5>Step-Up Loan Offer</h5>
                         <p>Young salaried professionals can avail higher eligibility on Home Loans.</p>
@@ -664,7 +656,7 @@
                 <div class="col-xl-4 col-md-8 box d-flex">
                     <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.9s" style="width:100%;">
                         <div class="icon-bg-4">
-                            <img src="{{asset('images\four.png')}}" alt="icon" class="icons">
+                            <img src="{{asset('images/four.png')}}" alt="icon" class="icons">
                         </div>
                         <h5>Digital Sanction</h5>
                         <p>Obtain online approval with just 5 simple steps for fast access to funds.</p>
@@ -674,7 +666,7 @@
                 <div class="col-xl-4 col-md-8 box">
                     <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.9s">
                         <div class="icon-bg-4">
-                            <img src="{{asset('images\five.png')}}" alt="icon" class="icons">
+                            <img src="{{asset('images/five.png')}}" alt="icon" class="icons">
                         </div>
                         <h5>PMAY</h5>
                         <p>Get subsidy benefits of up to Rs. 2.67* Lakhs under credit linked subsidy scheme from Govt. of India.</p>
@@ -684,7 +676,7 @@
                 <div class="col-xl-4 col-md-8 box">
                     <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.9s">
                         <div class="icon-bg-1">
-                            <img src="{{asset('images\six.png')}}" alt="icon" class="icons">
+                            <img src="{{asset('images/six.png')}}" alt="icon" class="icons">
                         </div>
                         <h5>Supported By Experts</h5>
                         <p>We can put you in touch with one of our expert in your area, who are ready to support you through your home loan journey.</p>
@@ -764,6 +756,12 @@
                                 <div class="item">
                                   <img src="{{config('app.baseURL')}}/images/bnk_logos/yb.jpg" alt="Yes Bank" class="bank_img">
                                 </div>
+                                <div class="item">
+                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/boi.png" alt="Yes Bank" class="bank_img">
+                                </div>
+                                <div class="item">
+                                  <img src="{{config('app.baseURL')}}/images/bnk_logos/uco.jpg" alt="Yes Bank" class="bank_img">
+                                </div>
                             </div>
                           
                             <script>
@@ -799,7 +797,7 @@
         </div>
     </section>
 
-    <!--  <section class="how-it-work pt-125 pb-140">
+    <!--<section class="how-it-work pt-125 pb-140">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 mx-auto">
@@ -874,7 +872,7 @@
                     <div class="col-xl-6 mx-auto">
                         <img src="assets/img/security-tips/security-priority.png" alt="icon">
                         <h2 class="mt-4 mb-3">Your Security. Our Priority.</h2>
-                        <p>We always have your security in mind. Rest easy knowing your data is protected with 128-bit encryption.<!-- <a href="#">Learn more.</a>--></p>
+                        <p>We always have your security in mind. Rest easy knowing your data is protected with 128-bit encryption.<!--<a href="#">Learn more.</a>--></p>
                     </div>
                 </div>
             </div>
@@ -892,10 +890,10 @@
                         <div class="accordion" id="accordionExample">
                             <div class="single-widget-one wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="w-100">
-                                    <div class="faq-header" id="headingOne">
+                                    <div class="faq-header" id="heading1">
                                         <h4 class="mb-0 heading-faq" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What all documents are required to apply for any Loan?<i class="material-icons">add</i><i class="material-icons">remove</i></h4>
                                     </div>
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="heading1" data-bs-parent="#accordionExample">
                                         <div class="faq-body">
                                             <p>To apply for a home loan, Contract loan, loan against property etc you need to submit documents such as a proof of identity, a proof of address, a loan application form that has been duly filled and your financial documents.</p>
                                         </div>
@@ -962,7 +960,7 @@
         </div>
     </section>
 
-<!-- Blog Posts start
+<!--Blog Posts start
     <section class="pb-120 bg-white" style="padding:50px 0px 100px 0px !important">
         <div class="container">
             <div class="section-title text-start">
@@ -1017,7 +1015,7 @@
                                         <div class="post-info">
                                            ₹ {{$get_property->from_property_price}} - ₹ {{$get_property->to_property_price}}
                                         </div>
-                                        <!--  <div class="row">
+                                        <div class="row">
                                             <div class="col-md-6">
                                                 <button><i class="fa fa-telephone"></i>{{$get_property->contact_number}}</button>
                                             </div>
@@ -1076,7 +1074,7 @@
 <script src="{{config('app.baseURL')}}/newassets/js/owl.carousel.min.js"></script>
 <script src="{{config('app.baseURL')}}/newassets/js/circle.js"></script>
 
-<!-- vendors -->
+<!--vendors-->
 <script src="{{config('app.baseURL')}}/assets/vendors/highlight.js"></script>
 <script src="{{config('app.baseURL')}}/assets/js/app.js"></script>
 @endsection

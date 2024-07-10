@@ -25,6 +25,9 @@ use App\User;
 use Hash;
 use App\Contact;
 use App\Thanks;
+use App\loantype;
+use App\amount;
+use App\placeLoan;
 use App\ReferalTools;
 use App\PropertyLead;
 
@@ -385,8 +388,11 @@ class PublicController extends Controller
 	}
 	
 	public function getHomeLoans(){
+		$loantype = loantype::get();
+		$amount = amount::get();
+		$placeLoan = placeLoan::get();
 
-		return view('home-loans');
+		return view('home-loans')->with('loantype',$loantype)->with('amount',$amount)->with('placeLoan',$placeLoan);
 	}
 	
 	public function getMortgageLoan(){
@@ -410,8 +416,11 @@ class PublicController extends Controller
 	}
 	
 	public function getMSMELoan(){
+		$loantype = loantype::get();
+		$amount = amount::get();
+		$placeLoan = placeLoan::get();
 
-		return view('msme-loan');
+		return view('msme-loan')->with('loantype',$loantype)->with('amount',$amount)->with('placeLoan',$placeLoan);
 	}
 	
 	public function getThankYou(){
@@ -426,16 +435,28 @@ class PublicController extends Controller
 		$name=$request->name;
 		$email=$request->email;
 		$phone=$request->phone;
-		$message1=$request->message;
+		$loantype=$request->loantype;
+		$amount=$request->amount;
+		$message2=$request->message;
+		$place_loan=$request->place_loan;
+		$nature_earning=$request->nature_earning;
+		$loan_requirement=$request->loan_requirement;
+		$area_jurisdiction=$request->area_jurisdiction;
 		
 		$user_contact=new Contact();
 		$user_contact->name=$name;
 		$user_contact->email=$email;
 		$user_contact->phone=$phone;
-		$user_contact->message=$message1;
+		$user_contact->loantype=$loantype;
+		$user_contact->amount=$amount;
+		$user_contact->message=$message2;
+		$user_contact->place_loan=$place_loan;
+		$user_contact->nature_earning=$nature_earning;
+		$user_contact->loan_requirement=$loan_requirement;
+		$user_contact->area_jurisdiction=$area_jurisdiction;
 		$user_contact->save();
 
-		$data = array('name'=>$name,'email'=>$email,'phone'=>$phone,'message1'=>$message1);
+		$data = array('name'=>$name,'email'=>$email,'phone'=>$phone,'loantype'=>$loantype,'amount'=>$amount,'place_loan'=>$place_loan,'nature_earning'=>$nature_earning,'loan_requirement'=>$loan_requirement,'area_jurisdiction'=>$area_jurisdiction,'message2'=>$message2);
 
 		try{
 		    Mail::send('mail/contactMail', $data, function($message) use ($email,$name){
@@ -459,8 +480,9 @@ class PublicController extends Controller
 	}
 	
 	public function postThanks(Request $request){
+		// dd($request);
 	    
-    	$this->validate($request,Thanks::$ThanksRules);
+    	$this->validate($request,Thanks::$ThanksRules, Contact::$contactRules);
 
 		$name=$request->name;
 		$email=$request->email;
@@ -468,6 +490,10 @@ class PublicController extends Controller
 		$loantype=$request->loantype;
 		$amount=$request->amount;
 		$message2=$request->message;
+		$place_loan=$request->place_loan;
+		$nature_earning=$request->nature_earning;
+		$loan_requirement=$request->loan_requirement;
+		$area_jurisdiction=$request->area_jurisdiction;
 		
 		$user_contact=new Contact();
 		$user_contact->name=$name;
@@ -476,9 +502,14 @@ class PublicController extends Controller
 		$user_contact->loantype=$loantype;
 		$user_contact->amount=$amount;
 		$user_contact->message=$message2;
+		$user_contact->place_loan=$place_loan;
+		$user_contact->nature_earning=$nature_earning;
+		$user_contact->loan_requirement=$loan_requirement;
+		$user_contact->area_jurisdiction=$area_jurisdiction;
+
 		$user_contact->save();
 
-		$data = array('name'=>$name,'email'=>$email,'phone'=>$phone,'loantype'=>$loantype,'amount'=>$amount,'message2'=>$message2);
+		$data = array('name'=>$name,'email'=>$email,'phone'=>$phone,'loantype'=>$loantype,'amount'=>$amount,'place_loan'=>$place_loan,'nature_earning'=>$nature_earning,'loan_requirement'=>$loan_requirement,'area_jurisdiction'=>$area_jurisdiction,'message2'=>$message2);
 
 		try{
 		    Mail::send('mail/thanksMail', $data, function($message) use ($email,$name){
@@ -586,6 +617,7 @@ class PublicController extends Controller
 
 	}
 
+	
 
 	
 

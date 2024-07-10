@@ -53,7 +53,7 @@ return [
     */
 
     'url' => env('APP_URL', 'http://localhost'),
-    'baseURL' => 'https://jfinserv.com',
+    'baseURL' => 'http://localhost/jfinserv',
 
     'asset_url' => env('ASSET_URL', null),
 

@@ -40,7 +40,10 @@
       <p>Email: {{$email}}</p> 
       <p>Loan Type: {{$loantype}}</p>
       <p>Amount: {{$amount}}</p>
-      <p>Message: {{$message2}}</p>   
+      <p>Place: {{$place_loan}}</p>
+      <p>nature_earning: {{$nature_earning}}</p>
+      <p>loan_requirement: {{$loan_requirement}}</p>
+      <p>area_jurisdiction: {{$area_jurisdiction}}</p>
     </td>
   </tr>
   <tr>

@@ -17,6 +17,10 @@ class Thanks extends Model
         'phone'=>'required|max:11|min:10',
         'loantype'=>'required',
         'amount'=>'required',
-        'message'=>'required'
+        'place_loan'=>'required',
+        'message'=>'required',
+        'nature_earning'=>'required',
+		'loan_requirement'=>'required',
+		'area_jurisdiction'=>'required',
        ];
 }
