@@ -60,20 +60,20 @@ div.dataTables_wrapper div.dataTables_length select {
         <!--</section>-->
 
         <!-- Job posts start -->
-        <section class="pb-130 bg_disable" style="margin-top: 150px;">
+        <section class="pb-130 bg_disable" style="margin-top:150px;">
             <div class="container">
                 <div class="row">
                     <!-- left side bar -->
                          @include('layouts.user-left')
 
                     <!-- Right bar -->
-                    <div class="col-lg-9 mt-4 card">
+                    <div class="col-lg-9 mt-4">
                         <div class="content-wrapper">
                           <div class="content-header row">
                             <div class="content-header-left col-md-9 col-12 mb-2">
                               <div class="row breadcrumbs-top">
                                 <div class="col-12">
-                                  <h2 class="content-header-title float-left mb-0">Edit My Profile</h2>
+                                  <h2 class="content-header-title float-left mb-0">Professional Detail</h2>
                                   <div class="breadcrumb-wrapper col-12">
                                     <ol class="breadcrumb">
 
@@ -81,7 +81,7 @@ div.dataTables_wrapper div.dataTables_length select {
                                         <a href="{{config('app.baseURL')}}"> Home </a>
                                       </li>
                                       <li class="breadcrumb-item">
-                                        <a href="{{config('app.baseURL')}}/myrefercode"> Edit My Profile </a>
+                                        <a href="{{config('app.baseURL')}}/"> Professional Detail </a>
                                       </li>
                                       <li class="breadcrumb-item">
                                       All                                </li>
@@ -96,54 +96,80 @@ div.dataTables_wrapper div.dataTables_length select {
                             <div class="col-md-12">
       <div  class="form-section">
 
-        <form action="myprofile" method="post">
+        <form action="educational-detail" method="post">
             @csrf
          <div class="row">
              
              <div class="col-sm-8 card" style="padding:10px;">
                  
                  <div class="row">
+                      <div class="col-md-12">
+                          
+                         @php
+                         if($user->profession_type=="self"){
+                         $check="checked";
+                         }else{
+                          $check="";
+                         }
+                         @endphp
+                                    <div class="form-check form-check-inline me-5  selfTab">
+                                        <input class="form-check-input" type="radio" name="profession_type" {{$check}} id="selfTab" value="self">
+                                        <label class="form-check-label" for="self">Self Employed/ Business Professionals</label>
+                                    </div>
+                                    @php
+                         if($user->profession_type=="salaried"){
+                         $check="checked";
+                         }else{
+                          $check="";
+                         }
+                         @endphp
+                                    <div class="form-check form-check-inline active me-5">
+                                        <input class="form-check-input" type="radio" name="profession_type" id="salariedTab" {{$check}} value="salaried">
+                                        <label class="form-check-label" for="married">Salaried Employees </label>
+                                    </div>
+                                </div>
+                      <div class="col-sm-12" style="margin-bottom:10px;">
+              <label>Firm / Company Name</label>
+           <div class="form-group">
+             <input type="text" name="company_name" class="form-control" value="{{$user->company_name}}" id="copy_link" placeholder="Company Name" style="width: 100%;">
+           </div>
+         </div><br>
              
           <div class="col-sm-12" style="margin-bottom:10px;">
-              <label>Name</label>
+              <label>Qualification</label>
            <div class="form-group">
-             <input type="text" name="name" class="form-control" value="{{$user->name}}" id="copy_link" placeholder="Name" style="width: 100%;">
+             <input type="text" name="qualification" class="form-control" value="{{$user->qualification}}" id="copy_link" placeholder="Qualification" style="width: 100%;">
            </div>
          </div><br>
          
           <div class="col-sm-12" style="margin-bottom:10px;">
-              <label>Contact Number (Login Id)</label>
+              <label>Nature Of Work</label>
            <div class="form-group">
-             <input type="number" name="contact_number" class="form-control" value="{{$user->contact_number}}" id="copy_link" placeholder="Contact Number" style="width: 100%;" readonly>
+             <input type="text" name="nature_of_work" class="form-control" value="{{$user->nature_of_work}}" id="copy_link" placeholder="Nature Of Work" style="width: 100%;">
            </div>
          </div><br>
          
-         
           <div class="col-sm-12" style="margin-bottom:10px;">
-              <label>Residence Address</label>
+              <label>Company Address</label>
            <div class="form-group">
-              <input type="text" name="present_address" class="form-control" value="{{$user->present_address}}" id="copy_link" placeholder="Contact Number" style="width: 100%;">
+              <input type="text" name="company_address" class="form-control" value="{{$user->company_address}}" id="copy_link" placeholder="Company Address" style="width: 100%;">
            </div>
          </div>
          
            <div class="col-sm-12" style="margin-bottom:10px;">
-              <label>City</label>
+              <label>Work Experience</label>
            <div class="form-group">
-              <input type="text" name="city" class="form-control" value="{{$user->city}}" id="copy_link" placeholder="City" style="width: 100%;">
+              <input type="text" name="work_experience" class="form-control" value="{{$user->work_experience}}" id="copy_link" placeholder="Work Experience" style="width: 100%;">
            </div>
          </div>
+         @if($profession_type=="salaried)
            <div class="col-sm-12" style="margin-bottom:10px;">
-              <label>State</label>
+              <label>Business Establish Date</label>
            <div class="form-group">
-              <input type="text" name="state" class="form-control" value="{{$user->state}}" id="copy_link" placeholder="State" style="width: 100%;">
+              <input type="text" name="business_estabish_date" class="form-control" value="{{$user->business_estabish_date}}" id="business_estabish_date" placeholder="Business Establish Date" style="width: 100%;">
            </div>
          </div>
-           <div class="col-sm-12" style="margin-bottom:10px;">
-              <label>Pincode</label>
-           <div class="form-group">
-              <input type="text" name="pincode" class="form-control" value="{{$user->pincode}}" id="copy_link" placeholder="Pincode" style="width: 100%;">
-           </div>
-         </div>
+         @endif
          
          
          <br>

@@ -157,6 +157,20 @@ div.dataTables_wrapper div.dataTables_length select {
                                         <label class="label" for="dob-d">Date of Birth*</label>
                                         <input type="date" name="date_of_birth" id="date_of_birth" value="{{$user->date_of_birth}}" class="form-control w-100" placeholder="Enter DOB" required>
                                     </div>
+          
+          <div class="col-sm-6" style="margin-bottom:15px;">
+            <label>Aadhaar*</label>
+           <div class="form-group">
+              <input type="text" name="aadhaar_card" required="" class="form-control" value="{{$user->aadhaar_card}}" id="copy_link" placeholder="Aadhar Card" style="width: 100%;">
+           </div>
+         </div> 
+         
+         <div class="col-sm-6" style="margin-bottom:15px;">
+            <label>PAN*</label>
+            <div class="form-group">
+              <input type="text" name="pan_card" required="" class="form-control" value="{{$user->pan_card}}" id="copy_link" placeholder="PAN Card" style="width: 100%;">
+           </div>
+         </div> 
          
           <div class="col-sm-6" style="margin-bottom:15px;">
               <label>Residence Address*</label>

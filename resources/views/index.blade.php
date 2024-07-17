@@ -306,7 +306,7 @@
         <div id="myCarousel" class="carousel slide mb-5" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="{{config('app.baseURL')}}/images/about2.webp" alt="happy family" class="banner-area-2 pt-95">
+                    <img src="https://jfinserv.com/images/about2.webp" alt="happy family" class="banner-area-2 pt-95">
                 </div>
             </div>
         </div>

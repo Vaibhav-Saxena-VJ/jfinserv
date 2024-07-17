@@ -62,6 +62,12 @@ $user=Auth::user();
                                                     <span class="text">Personal Details</span>
                                                 </a>
                                             </li>
+                                            <li class="catagory-item ">
+                                                <a href="{{config('app.baseURL')}}/professional-detail" class="catagory-link ">
+                                                  <img src="{{asset('images\resume.png')}}" alt="icon" class="icons" style="width: 30px;">
+                                                    <span class="text">Educational Details</span>
+                                                </a>
+                                            </li>
                                              <li class="catagory-item ">
                                                 <a href="{{config('app.baseURL')}}/professional-detail" class="catagory-link ">
                                                   <img src="{{asset('images\resume.png')}}" alt="icon" class="icons" style="width: 30px;">
