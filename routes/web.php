@@ -20,6 +20,8 @@ Route::get('contact', 'PublicController@getContact');
 Route::post('contact', 'PublicController@postContact');
 Route::get('personal-loan','PublicController@getPersonalLoan');
 
+Route::get('client-login', 'PublicController@getClientLogin');
+
 Route::get('loandocument', 'PublicController@getDocumentation');
 Route::get('blog', 'PublicController@getBlogs');
 Route::get('blog/{url}', 'PublicController@getBlogDetails');
@@ -165,7 +167,10 @@ Auth::routes([ 'register' => false ]);
 	Route::post('professional-detail', ['middleware' =>'auth', 'uses'=>'AdminController@postProfessionalDetail']);
 	Route::get('edit-professional-detail', ['middleware' =>'auth', 'uses'=>'AdminController@getEditProfessionalDetail']);
 	Route::get('mynotifications',['middleware' =>'auth', 'uses'=>'AdminController@getNotificationDetail']);
-	
+	//educational details
+	Route::get('educational-detail', ['middleware' =>'auth', 'uses'=>'AdminController@getEducationalDetail']);
+	Route::post('educational-detail', ['middleware' =>'auth', 'uses'=>'AdminController@postEducationalDetail']);
+	Route::get('edit-educational-detail', ['middleware' =>'auth', 'uses'=>'AdminController@getEditEducationalDetail']);
 	//Loan Details
 	Route::get('accountLoanDetails/{id}', ['middleware' =>'auth', 'uses'=>'AdminController@getAccountLoanDetails']);
 	Route::get('delete_userdocument/{id}', ['middleware' =>'auth', 'uses'=>'AdminController@postDeleteUserDoc']);
@@ -347,7 +352,7 @@ Route::get('property/remove_propertyimage/{id}', ['middleware' =>'auth', 'uses' 
 	Route::get('user/allData', ['middleware' =>'auth', 'uses' =>'AdminController@getALLUserData']);
 
 
-Route::get('partner/all', ['middleware' =>'auth', 'uses' =>'AdminController@getALLPartner']);
+	Route::get('partner/all', ['middleware' =>'auth', 'uses' =>'AdminController@getALLPartner']);
 	Route::get('partner/allData', ['middleware' =>'auth', 'uses' =>'AdminController@getALLPartnerData']);
 
 	Route::get('get_started/all', ['middleware' =>'auth', 'uses' =>'AdminController@getAllGetStarted']);

@@ -805,6 +805,8 @@ class AdminController extends Controller
 		$MaritalStatas=$request->MaritalStatas;
 		$date_of_birth=$request->date_of_birth;
 		$email=$request->email;
+		$aadhaar_card=$request->aadhaar_card;
+		$pan_card=$request->pan_card;
 	
 		
 		
@@ -816,9 +818,10 @@ class AdminController extends Controller
 		$user->contact_number=$contact_number;
 	    $user->name=$name;
 	    $user->marital_status=$MaritalStatas;
-	     $user->date_of_birth=$date_of_birth;
-	      $user->email=$email;
-	     
+	    $user->date_of_birth=$date_of_birth;
+	    $user->email=$email;
+	    $user->aadhaar_card=$aadhaar_card;
+		$user->pan_card=$pan_card;
 	     
 		$user->save();
 	
@@ -839,6 +842,21 @@ class AdminController extends Controller
 		return view('myaccount.professional-detail')->with('loan_details',$loan_details)->with('doc_pending',$doc_pending)->with('inprocess',$inprocess)->with('approved',$approved)->with('rejeted',$rejeted)->with('referearn',$referearn)->with('user',$user);
 		
 	}
+
+	public function getEducationalDetail(Request $request)
+	{
+		$user=Auth::user();
+		$loan_details=Loan::where('user_id', $user->id)->first();
+		$doc_pending=Loan::where('user_id', $user->id)->where('status',1)->count();
+		$inprocess=Loan::where('user_id', $user->id)->where('status',0)->count();
+		$approved=Loan::where('user_id', $user->id)->where('status',2)->count();
+		$rejeted=Loan::where('user_id', $user->id)->where('status',3)->count();
+		$referearn=ReferFriend::where('referred_by',$user->id)->count();
+		
+		return view('myaccount.educational-detail')->with('loan_details',$loan_details)->with('doc_pending',$doc_pending)->with('inprocess',$inprocess)->with('approved',$approved)->with('rejeted',$rejeted)->with('referearn',$referearn)->with('user',$user);
+		
+	}
+
 	public function getNotificationDetail(Request $request)
 	{
 		$user=Auth::user();
@@ -871,7 +889,35 @@ class AdminController extends Controller
 		return view('admin.notifications')->with('user_comments',$user_comments);
 	}
 	
-		public function postProfessionalDetail(Request $request)
+	public function postProfessionalDetail(Request $request)
+	{
+		$user=Auth::user();
+		$profession_type=$request->profession_type;
+		$qualification=$request->qualification;
+		$company_name=$request->company_name;
+		$nature_of_work=$request->nature_of_work;
+		$work_experience=$request->work_experience;
+		$business_estabish_date=$request->business_estabish_date;
+		$company_address=$request->company_address;
+			$job_business_profile=$request->job_business_profile;
+		
+		
+		$user->profession_type=$profession_type;
+		$user->highest_qualification=$qualification;
+		$user->company_name=$company_name;
+		$user->nature_of_work=$nature_of_work;
+		$user->work_exp=$work_experience;
+	    $user->business_estabish_date=$business_estabish_date;
+	    $user->company_address=$company_address;
+	     $user->job_business_profile=$job_business_profile;
+	    
+		$user->save();
+	
+	
+	    return redirect()->back();
+	}
+
+	public function postEducationalDetail(Request $request)
 	{
 		$user=Auth::user();
 		$profession_type=$request->profession_type;
@@ -899,7 +945,7 @@ class AdminController extends Controller
 	    return redirect()->back();
 	}
 	
-		public function getEditProfessionalDetail(Request $request)
+	public function getEditProfessionalDetail(Request $request)
 	{
 		$user=Auth::user();
 		$loan_details=Loan::where('user_id', $user->id)->first();
@@ -912,6 +958,22 @@ class AdminController extends Controller
 		return view('myaccount.edit-professional-detail')->with('loan_details',$loan_details)->with('doc_pending',$doc_pending)->with('inprocess',$inprocess)->with('approved',$approved)->with('rejeted',$rejeted)->with('referearn',$referearn)->with('user',$user);
 		
 	}
+
+	public function getEditEducationalDetail(Request $request)
+	{
+		$user=Auth::user();
+		$loan_details=Loan::where('user_id', $user->id)->first();
+		$doc_pending=Loan::where('user_id', $user->id)->where('status',1)->count();
+		$inprocess=Loan::where('user_id', $user->id)->where('status',0)->count();
+		$approved=Loan::where('user_id', $user->id)->where('status',2)->count();
+		$rejeted=Loan::where('user_id', $user->id)->where('status',3)->count();
+		$referearn=ReferFriend::where('referred_by',$user->id)->count();
+		
+		return view('myaccount.edit-educational-detail')->with('loan_details',$loan_details)->with('doc_pending',$doc_pending)->with('inprocess',$inprocess)->with('approved',$approved)->with('rejeted',$rejeted)->with('referearn',$referearn)->with('user',$user);
+		
+	}
+
+
 // 	public function postProfessionalDetail(Request $request)
 // 	{
 // 		$user=Auth::user();

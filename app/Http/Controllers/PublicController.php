@@ -386,6 +386,11 @@ class PublicController extends Controller
 
 		return view('contact');
 	}
+
+	public function getClientLogin(){
+
+		return view('auth/client-login');
+	}
 	
 	public function getHomeLoans(){
 		$loantype = loantype::get();

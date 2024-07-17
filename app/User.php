@@ -46,4 +46,5 @@ class User extends Authenticatable
     'password' => 'required|max:20|min:6',
     'password_confirmation' => 'required|max:20|same:password'
 ];
+
 }
