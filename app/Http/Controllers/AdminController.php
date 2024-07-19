@@ -162,7 +162,7 @@ class AdminController extends Controller
 		if ($user->role_id!=1 && $user->role_id!=4) {
             	// $users=User::where('email',$user->email)->first();
             	//$loan_details=Loan::where('user_id', $user->id)->first();
-			return redirect('myprofile');
+			return redirect('userdash');
                 // return view('myaccount.my_account_details')->with('loan_details', $loan_details);
 		}
 		else{
@@ -738,6 +738,7 @@ class AdminController extends Controller
 		return view('myaccount.myprofile')->with('loan_details',$loan_details)->with('doc_pending',$doc_pending)->with('inprocess',$inprocess)->with('approved',$approved)->with('rejeted',$rejeted)->with('referearn',$referearn)->with('user',$user);
 		
 	}
+	
 	public function getEditMyprofile(Request $request)
 	{
 		$user=Auth::user();
@@ -922,22 +923,25 @@ class AdminController extends Controller
 		$user=Auth::user();
 		$profession_type=$request->profession_type;
 		$qualification=$request->qualification;
-		$company_name=$request->company_name;
+		$college_name=$request->college_name;
+		$passing_year=$request->passing_year;
 		$nature_of_work=$request->nature_of_work;
 		$work_experience=$request->work_experience;
 		$business_estabish_date=$request->business_estabish_date;
-		$company_address=$request->company_address;
-			$job_business_profile=$request->job_business_profile;
+		$college_address=$request->college_address;
+		$job_business_profile=$request->job_business_profile;
+
 		
 		
 		$user->profession_type=$profession_type;
 		$user->highest_qualification=$qualification;
-		$user->company_name=$company_name;
+		$user->college_name=$college_name;
+		$user->passing_year=$passing_year;
 		$user->nature_of_work=$nature_of_work;
 		$user->work_exp=$work_experience;
 	    $user->business_estabish_date=$business_estabish_date;
-	    $user->company_address=$company_address;
-	     $user->job_business_profile=$job_business_profile;
+	    $user->college_address=$college_address;
+	    $user->job_business_profile=$job_business_profile;
 	    
 		$user->save();
 	

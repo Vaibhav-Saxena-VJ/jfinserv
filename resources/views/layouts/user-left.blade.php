@@ -58,25 +58,25 @@ $user=Auth::user();
                                             <hr>
                                             <li class="catagory-item ">
                                                 <a href="{{config('app.baseURL')}}/myprofile" class="catagory-link ">
-                                                  <img src="{{asset('images\resume.png')}}" alt="icon" class="icons" style="width: 30px;">
+                                                  <img src="{{asset('images\personal.png')}}" alt="icon" class="icons" style="width: 30px;">
                                                     <span class="text">Personal Details</span>
                                                 </a>
                                             </li>
                                             <li class="catagory-item ">
-                                                <a href="{{config('app.baseURL')}}/professional-detail" class="catagory-link ">
-                                                  <img src="{{asset('images\resume.png')}}" alt="icon" class="icons" style="width: 30px;">
+                                                <a href="{{config('app.baseURL')}}/educational-detail" class="catagory-link ">
+                                                  <img src="{{asset('images\education.png')}}" alt="icon" class="icons" style="width: 30px;">
                                                     <span class="text">Educational Details</span>
                                                 </a>
                                             </li>
                                              <li class="catagory-item ">
                                                 <a href="{{config('app.baseURL')}}/professional-detail" class="catagory-link ">
-                                                  <img src="{{asset('images\resume.png')}}" alt="icon" class="icons" style="width: 30px;">
+                                                  <img src="{{asset('images\professionall.png')}}" alt="icon" class="icons" style="width: 30px;">
                                                     <span class="text">Professional Details</span>
                                                 </a>
                                             </li>
                                             <li class="catagory-item">
                                                 <a href="{{config('app.baseURL')}}/mynotifications" class="catagory-link">
-                                                  <img src="{{asset('images\processing.png')}}" alt="icon" class="icons" style="width: 30px;">
+                                                  <img src="{{asset('images\notification.png')}}" alt="icon" class="icons" style="width: 30px;">
                                                     <span class="text">Notifications</span>
                                                     @if($data['notification_count']==0)
                                                     <span class="number">
@@ -95,7 +95,7 @@ $user=Auth::user();
                                             
                                             <li class="catagory-item">
                                                 <a href="{{config('app.baseURL')}}/myloaninprocess/{{$user->id}}" class="catagory-link">
-                                                  <img src="{{asset('images\processing.png')}}" alt="icon" class="icons" style="width: 30px;">
+                                                  <img src="{{asset('images\loan-app.png')}}" alt="icon" class="icons" style="width: 30px;">
                                                     <span class="text">Loan Application</span>
                                                     
                                                 </a>
@@ -117,7 +117,7 @@ $user=Auth::user();
 
                                             <li class="catagory-item">
                                                 <a href="{{config('app.baseURL')}}/myloanapproved/{{$user->id}}" class="catagory-link">
-                                                  <img src="{{asset('images\give-money.png')}}" alt="icon" class="icons" style="width: 30px;">
+                                                  <img src="{{asset('images\loan-approve.png')}}" alt="icon" class="icons" style="width: 30px;">
                                                     <span class="text">Approved Loan</span>
                                                     <span class="number">
                                                        @if($approved!="")
@@ -130,7 +130,7 @@ $user=Auth::user();
                                             </li>
                                             <li class="catagory-item">
                                                 <a href="{{config('app.baseURL')}}/myloanreject/{{$user->id}}" class="catagory-link">
-                                                  <img src="{{asset('images\loan.png')}}" alt="icon" class="icons" style="width: 30px;">
+                                                  <img src="{{asset('images\rejected.png')}}" alt="icon" class="icons" style="width: 30px;">
                                                     <span class="text">Rejected Loan</span>
                                                     <span class="number">
                                                          @if($rejeted!="")
@@ -144,7 +144,7 @@ $user=Auth::user();
                                            
                                             <li class="catagory-item">
                                                 <a href="{{config('app.baseURL')}}/myreferearn/{{$user->id}}" class="catagory-link">
-                                                  <img src="{{asset('images\network.png')}}" alt="icon" class="icons" style="width: 30px;">
+                                                  <img src="{{asset('images\referal.png')}}" alt="icon" class="icons" style="width: 30px;">
                                                     <span class="text">Referrals</span>
                                                     <span class="number">
                                                          @if($referearn!="")

@@ -81,7 +81,7 @@ div.dataTables_wrapper div.dataTables_length select {
                                         <a href="{{config('app.baseURL')}}"> Home </a>
                                       </li>
                                       <li class="breadcrumb-item">
-                                        <a href="{{config('app.baseURL')}}/"> Professional Detail </a>
+                                        <a href="{{config('app.baseURL')}}/"> Educational Detail </a>
                                       </li>
                                       <li class="breadcrumb-item">
                                       All                                </li>

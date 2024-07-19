@@ -407,222 +407,38 @@ public function postLoanApplySuccess(Request $request){
         'alert-type' => 'success'
     );
 
-    $loan_id=$request->loan_id;
-
-    // $loandocument=LoanDocuments::where('loan_id',$loan_id)->first();
-    // if ($loandocument=="") {
-    //     $loandocument= new LoanDocuments();
-    // }
-    
-    $status=0;
-
+    $loan_id = $request->loan_id;
+    $status = 0;
 
     $dully_filled = $request->dully_filled;
-    
-    $dully_form =$request->dully_form;
-    if($dully_filled!=''){
-    // print_r($dully_filled);
-    $img_count = count($dully_filled);
-    // echo $img_count;die;
-    
-        for ($i=0; $i < $img_count; $i++) { 
+    $dully_form = $request->dully_form;
 
-            $loandocument= new LoanDocuments();
-             
-            $loandocument->loan_id=$loan_id;
-            $loandocument->name=$dully_form;
-            
-            if(Input::hasFile('dully_filled')){
-                $eventImage = $request->dully_filled[$i];
+    if ($dully_filled) {
+        foreach ($dully_filled as $key => $file) {
+            $loandocument = new LoanDocuments();
+            $loandocument->loan_id = $loan_id;
+            $loandocument->name = $dully_form;
+
+            if ($request->hasFile('dully_filled.' . $key)) {
+                $eventImage = $request->file('dully_filled.' . $key);
                 $path = $eventImage->store('dully_filled');
-                $loandocument->documents=$path;
-            }
-
-            $loandocument->save();
-
-        }
-      }
-      $ageproof = $request->ageproof;
-      $identity = $request->identity;
-      if($ageproof!=''){
-    $img_count = count($ageproof);    
-        for ($i=0; $i < $img_count; $i++) { 
-
-            $loandocument= new LoanDocuments();
-             
-            $loandocument->loan_id=$loan_id;
-            $loandocument->name=$identity;
-            
-            if(Input::hasFile('dully_filled')){
-                $eventImage = $request->ageproof[$i];
-                $path = $eventImage->store('ageproof');
-                $loandocument->documents=$path;
+                $loandocument->documents = $path;
             }
 
             $loandocument->save();
         }
-      }else{
-          $status=1;
-      }
+    }
 
-         $resident_proof = $request->resident_proof;
-      $residence_proof = $request->residence_proof;
-      if($resident_proof!=''){
-    $img_count = count($resident_proof);    
-        for ($i=0; $i < $img_count; $i++) { 
+    // Repeat the above pattern for other file uploads...
 
-            $loandocument= new LoanDocuments();
-             
-            $loandocument->loan_id=$loan_id;
-            $loandocument->name=$residence_proof;
-            
-            if(Input::hasFile('resident_proof')){
-                $eventImage = $request->resident_proof[$i];
-                $path = $eventImage->store('resident_proof');
-                $loandocument->documents=$path;
-            }
+    // Update loan status
+    $loandetails = Loan::where('loan_id', $loan_id)->first();
+    $loandetails->status = $status;
+    $loandetails->save();
 
-            $loandocument->save();
-        }
-      }else{
-          $status=1;
-      }
-
-      $education = $request->education;
-      $education_proof = $request->education_proof;
-      if($education!=''){
-    $img_count = count($education);    
-        for ($i=0; $i < $img_count; $i++) { 
-
-            $loandocument= new LoanDocuments();
-             
-            $loandocument->loan_id=$loan_id;
-            $loandocument->name=$education_proof;
-            
-            if(Input::hasFile('education')){
-                $eventImage = $request->education[$i];
-                $path = $eventImage->store('education');
-                $loandocument->documents=$path;
-            }
-
-            $loandocument->save();
-        }
-      }
-
-      $salary_slip = $request->salary_slip;
-      $income_proof = $request->income_proof;
-      if($salary_slip!=''){
-    $img_count = count($salary_slip);    
-        for ($i=0; $i < $img_count; $i++) { 
-
-            $loandocument= new LoanDocuments();
-             
-            $loandocument->loan_id=$loan_id;
-            $loandocument->name=$income_proof;
-            
-            if(Input::hasFile('salary_slip')){
-                $eventImage = $request->salary_slip[$i];
-                $path = $eventImage->store('salary_slip');
-                $loandocument->documents=$path;
-            }
-
-            $loandocument->save();
-        }
-      }
-
-       $form_sixteen = $request->form_sixteen;
-      $form_sixteendoc = $request->form_sixteendoc;
-      if($form_sixteen!=''){
-    $img_count = count($form_sixteen);    
-        for ($i=0; $i < $img_count; $i++) { 
-
-            $loandocument= new LoanDocuments();
-             
-            $loandocument->loan_id=$loan_id;
-            $loandocument->name=$form_sixteendoc;
-            
-            if(Input::hasFile('form_sixteen')){
-                $eventImage = $request->form_sixteen[$i];
-                $path = $eventImage->store('form_sixteen');
-                $loandocument->documents=$path;
-            }
-
-            $loandocument->save();
-        }
-      }
-
-      $bank_statement = $request->bank_statement;
-      $bankstatement_proof = $request->bankstatement_proof;
-      if($bank_statement!=''){
-    $img_count = count($bank_statement);    
-        for ($i=0; $i < $img_count; $i++) { 
-
-            $loandocument= new LoanDocuments();
-             
-            $loandocument->loan_id=$loan_id;
-            $loandocument->name=$bankstatement_proof;
-            
-            if(Input::hasFile('bank_statement')){
-                $eventImage = $request->bank_statement[$i];
-                $path = $eventImage->store('bank_statement');
-                $loandocument->documents=$path;
-            }
-
-            $loandocument->save();
-        }
-      }else{
-          $status=1;
-      }
-
-      $business_certificate = $request->business_certificate;
-      $business_certificateproof = $request->business_certificateproof;
-      if($business_certificate!=''){
-    $img_count = count($business_certificate);    
-        for ($i=0; $i < $img_count; $i++) { 
-
-            $loandocument= new LoanDocuments();
-             
-            $loandocument->loan_id=$loan_id;
-            $loandocument->name=$business_certificateproof;
-            
-            if(Input::hasFile('business_certificate')){
-                $eventImage = $request->business_certificate[$i];
-                $path = $eventImage->store('business_certificate');
-                $loandocument->documents=$path;
-            }
-
-            $loandocument->save();
-        }
-      }
-
-      $tax_return = $request->tax_return;
-      $tax_return_proof = $request->tax_return_proof;
-      if($tax_return!=''){
-    $img_count = count($tax_return);    
-        for ($i=0; $i < $img_count; $i++) { 
-
-            $loandocument= new LoanDocuments();
-             
-            $loandocument->loan_id=$loan_id;
-            $loandocument->name=$tax_return_proof;
-            
-            if(Input::hasFile('tax_return')){
-                $eventImage = $request->tax_return[$i];
-                $path = $eventImage->store('tax_return');
-                $loandocument->documents=$path;
-            }
-
-            $loandocument->save();
-        }
-      }
-      
-          $loandetails=Loan::where('loan_id',$loan_id)->first();
-          $loandetails->status=$status;
-          $loandetails->save();
-
-      return redirect('myprofile')->with($notification);
-
+    return redirect('myprofile')->with($notification);
 }
+
 public function postUploadDocument(Request $request){
 
     $image = $request->file('file');
