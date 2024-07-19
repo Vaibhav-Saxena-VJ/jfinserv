@@ -37,7 +37,7 @@
 }
 
 .dropdown-content a {
-  color: black;
+  color: black !important;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -220,7 +220,7 @@ header .header-top .header-info-right ul li img {
                             <a href="{{config('app.baseURL')}}/services" class="nav-link dropdown-toggle" role="button">SERIVICE</a><i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="true" data-bs-toggle="dropdown"></i>
                             <div class="dropdown-content">
                             <a href="{{config('app.baseURL')}}/home-loan" class="nav-link" role="button">Home Loan</a>
-                            <a href="{{config('app.baseURL')}}/contract-loan" class="nav-link" role="button">Contract Loan</a>
+                            <a href="{{config('app.baseURL')}}/loan-against-property" class="nav-link" role="button">Loan Against Property</a>
                             <a href="{{config('app.baseURL')}}/project-loan" class="nav-link" role="button">Project Loan</a>
                             <!-- <a href="{{config('app.baseURL')}}/personal-loan" class="nav-link" role="button">Personal Loan</a> -->
                             <a href="{{config('app.baseURL')}}/overdraft-facility" class="nav-link" role="button">Overdraft Facility</a>

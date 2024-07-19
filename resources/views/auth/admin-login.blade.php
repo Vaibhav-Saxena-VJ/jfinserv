@@ -318,13 +318,13 @@
                     <img src="/images/logo/logo.png" srcset="/images/logo/logo.png" alt="logo" style="width:200px;margin-left:20%;">
                   </a> -->
                   <img src="/images/logo/logo.png" srcset="https://jfinserv.com/images/logo/logo.png" alt="logo" style="width: 250px;background: #fff;padding: 10px;">
-                  <h1 class="text-center mt-5 text-white"><b>Welcome to Jfinserv Consultant</b></h1>
-                  <ul class="login_options">
+                  <h1 class="text-center mt-5 text-white"><b>Admin Portal</b></h1>
+                  <!-- <ul class="login_options">
                     <li><a target="_blank" href="/terms-condition">Terms of Services</a></li>
                     <li><a target="_blank" href="/privacy-policy">Privacy Policy</a></li>
                     <li><a target="_blank" href="/cookie-policy">Cookie Policy</a></li>
-                    <!--<li><a target="_blank" href="#">Refund Policy</a></li>-->
-                  </ul>
+                    <li><a target="_blank" href="#">Refund Policy</a></li>
+                  </ul> -->
                 </div>
             </div>
     
@@ -337,7 +337,7 @@
                     <div class="row justify-content-center my-5">
                         <div class="col-md-12 mx-auto my-5">
                             <div class="card-body shadow text-left text-dark" style="border-radius: 10px;"> 
-                                <h2 class="h2 text-left mt-2 mb-3" style="color: #fff;"><b>Sign In</b></h2> 
+                                <h2 class="h2 text-left mt-2 mb-3" style="color: #fff;"><b>Login</b></h2> 
                                 <form method="POST" action="{{ route('login') }}" data-gtm-form-interact-id="0">
                                     @csrf
                                     <div class="form-group" >
@@ -364,12 +364,12 @@
                                     <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;">Log In</button>
                                 </form>
                 
-                                <div class="col-md-12 m-20 mt-2">
+                                <!-- <div class="col-md-12 m-20 mt-2">
                                   <div class="row text-white">
                                     <p class="psign">Not have an account? <a href="{{config('app.baseURL')}}/Auth/registeruser" class="text-white"><u>Register</u></a></p>
                                     <p class="psign">Register As a Partner <a href="{{config('app.baseURL')}}/Auth/registerpartner" class="text-white"><u>Register</u></a></p>
                                   </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

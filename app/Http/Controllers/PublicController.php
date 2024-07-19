@@ -389,7 +389,7 @@ class PublicController extends Controller
 
 	public function getClientLogin(){
 
-		return view('auth/client-login');
+		return view('auth/admin-login');
 	}
 	
 	public function getHomeLoans(){

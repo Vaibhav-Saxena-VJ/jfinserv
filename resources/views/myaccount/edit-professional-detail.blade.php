@@ -129,9 +129,9 @@ div.dataTables_wrapper div.dataTables_length select {
                                     </div>
                                 </div>
                       <div class="col-sm-12" style="margin-bottom:10px;">
-              <label>Firm / Company Name</label>
+              <label>College Name</label>
            <div class="form-group">
-             <input type="text" name="company_name" class="form-control" value="{{$user->company_name}}" id="copy_link" placeholder="Company Name" style="width: 100%;">
+             <input type="text" name="college_name" class="form-control" value="{{$user->college_name}}" id="copy_link" placeholder="College Name" style="width: 100%;">
            </div>
          </div><br>
              
@@ -155,6 +155,33 @@ div.dataTables_wrapper div.dataTables_length select {
               <input type="text" name="company_address" class="form-control" value="{{$user->company_address}}" id="copy_link" placeholder="Company Address" style="width: 100%;">
            </div>
          </div>
+         <div class="col-lg-12 col-md-12 col-sm-6 {{ $errors->has('education') ? ' has-error' : '' }}">
+                  <span>3.</span>
+                  <p>Educational Qualification Proof - Latest Degree (for professionals) </p>
+    <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
+                      <img class="image-size"  src="{{config('app.baseURL')}}/images/preview.png" id="education" alt="" style="height: 100px;">
+    </div>
+                    <div class="form-group">
+                      <div class="controls">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <input type="file" class="form-control"  name="education[]"  onchange="document.getElementById('education').src = window.URL.createObjectURL(this.files[0])" style="padding-top: 10px;" >
+                            <input type="hidden" name="education_proof" value="education">
+                            @if ($errors->has('education'))
+                              <span class="help-block">
+                                <strong>{{ $errors->first('education') }}</strong>
+                              </span>
+                            @endif
+                          </div>
+                          <div class="col-lg-1">
+                            <a class="uploadeducation" id="uploadeducation"><i class="fa fa-plus" style="font-size:24px;margin-top: 10px;margin-left: -25px;"></i></a>
+                          </div>
+                        </div>
+                        <div class="educationproof col-lg-12"></div>
+                      </div>
+      </div>
+  </div>
+          
          
            <div class="col-sm-12" style="margin-bottom:10px;">
               <label>Work Experience</label>

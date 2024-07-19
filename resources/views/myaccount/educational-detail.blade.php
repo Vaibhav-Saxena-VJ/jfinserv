@@ -78,7 +78,7 @@ div.dataTables_wrapper div.dataTables_length select {
                             <div class="content-header-left col-md-9 col-12 mb-2">
                               <div class="row breadcrumbs-top">
                                 <div class="col-12">
-                                  <h2 class="content-header-title float-left mb-0">Professional Detail</h2>
+                                  <h2 class="content-header-title float-left mb-0">Educational Detail</h2>
                                   <div class="breadcrumb-wrapper col-12">
                                     <ol class="breadcrumb">
 
@@ -86,7 +86,7 @@ div.dataTables_wrapper div.dataTables_length select {
                                         <a href="{{config('app.baseURL')}}"> Home </a>
                                       </li>
                                       <li class="breadcrumb-item">
-                                        <a href="{{config('app.baseURL')}}/"> Professional Detail </a>
+                                        <a href="{{config('app.baseURL')}}/"> Educational Detail </a>
                                       </li>
                                       <li class="breadcrumb-item">
                                       All                                </li>
@@ -110,67 +110,40 @@ div.dataTables_wrapper div.dataTables_length select {
             @csrf
          <div class="row">
              
-               <div class="form-check form-check-inline me-5  selfTab">
-                                        <input class="form-check-input profession_type" type="radio" name="profession_type"  id="selfTab" value="self">
-                                        <label class="form-check-label" for="self">Self Employed/ Business Professionals</label>
-                                   
-                                    <div class="form-check form-check-inline active me-5">
-                                        <input class="form-check-input profession_type" type="radio" name="profession_type" id="salariedTab" value="salaried" >
-                                        <label class="form-check-label" for="married">Salaried Employees </label>
-                                    </div>
-                                </div>
+               
              
              <div class="col-sm-12" style="padding:10px;">
                  
                  <div class="row">
-                     
-                      <div class="col-sm-6" style="margin-bottom:20px;">
-              <label>Firm / Company Name*</label>
+                          
+          <div class="col-sm-6" style="margin-bottom:20px;">
+              <label>Highest Qualification*</label>
            <div class="form-group">
-             <input type="text" name="company_name" required="" class="form-control" value="{{$user->company_name}}" id="copy_link" placeholder="Company Name" style="width: 100%;">
+             <input type="text" name="qualification" required="" class="form-control" value="{{$user->highest_qualification}}" id="copy_link" placeholder="eg. BCA/MBA" style="width: 100%;">
            </div>
          </div><br>
-             
-          <div class="col-sm-6" style="margin-bottom:20px;">
-              <label>Qualification*</label>
+            <div class="col-sm-6" style="margin-bottom:20px;">
+              
+              <label>Institute / College Name*</label>
            <div class="form-group">
-             <input type="text" name="qualification" required="" class="form-control" value="{{$user->highest_qualification}}" id="copy_link" placeholder="Qualification" style="width: 100%;">
+             <input type="text" name="college_name" required="" class="form-control" value="{{$user->college_name}}" id="copy_link" placeholder="College Name" style="width: 100%;">
+           </div>
+         </div><br>
+        
+         
+          <div class="col-sm-6" style="margin-bottom:20px;">
+              <label>Passing Year*</label>
+           <div class="form-group">
+             <input type="text" name="passing_year" required="" class="form-control" value="{{$user->passing_year}}" id="copy_link" placeholder="Year of Passing" style="width: 100%;">
            </div>
          </div><br>
          
           <div class="col-sm-6" style="margin-bottom:20px;">
-              <label>Industry / Nature Of Work*</label>
+              <label>Location*</label>
            <div class="form-group">
-             <input type="text" name="nature_of_work" required="" class="form-control" value="{{$user->nature_of_work}}" id="copy_link" placeholder="Nature Of Work" style="width: 100%;">
+              <input type="text" name="college_address" required="" class="form-control" value="{{$user->college_address}}" id="copy_link" placeholder=" Address" style="width: 100%;">
            </div>
-         </div><br>
-         
-          <div class="col-sm-6" style="margin-bottom:20px;">
-              <label>Company Address*</label>
-           <div class="form-group">
-              <input type="text" name="company_address" required="" class="form-control" value="{{$user->company_address}}" id="copy_link" placeholder="Company Address" style="width: 100%;">
-           </div>
-         </div>
-         
-           <div class="col-sm-6" style="margin-bottom:20px;">
-              <label>Total Work Experience*</label>
-           <div class="form-group">
-              <input type="number" step="0.1" name="work_experience" required="" class="form-control" value="{{$user->work_exp}}" id="copy_link" placeholder="Work Experience" style="width: 100%;">
-           </div>
-         </div>
-         
-            <div class="col-md-6" style="margin-bottom:20px;">
-                                        <label class="label" for="nature_work">Job or Business Profile*</label>
-                                        <div class="form-group">
-                                        <input id='job_business_profile' required="" name="job_business_profile" value="{{$user->job_business_profile}}" class="form-control" type="text" required style="width: 100%;">
-                                    </div>
-                                    </div>
-                                    
-           <div class="col-sm-6 business_date hidden" style="margin-bottom:20px;">
-              <label>Business Establish Date*</label>
-           <div class="form-group">
-              <input type="date" name="business_estabish_date" class="form-control" value="{{$user->business_estabish_date}}" id="business_estabish_date" placeholder="Business Establish Date" style="width: 100%;">
-           </div>
+         </div>  
          </div>
          
          

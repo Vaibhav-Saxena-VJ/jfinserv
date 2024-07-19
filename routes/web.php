@@ -20,7 +20,7 @@ Route::get('contact', 'PublicController@getContact');
 Route::post('contact', 'PublicController@postContact');
 Route::get('personal-loan','PublicController@getPersonalLoan');
 
-Route::get('client-login', 'PublicController@getClientLogin');
+Route::get('admin', 'PublicController@getClientLogin');
 
 Route::get('loandocument', 'PublicController@getDocumentation');
 Route::get('blog', 'PublicController@getBlogs');
